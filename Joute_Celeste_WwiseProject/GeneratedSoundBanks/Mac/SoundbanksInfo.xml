@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\Utilisateurs\Samuel\Mes documents\Cours\Enjmin\Projets\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Utilisateurs\Samuel\Mes documents\Cours\Enjmin\Projets\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Utilisateurs\Samuel\Mes documents\Cours\Enjmin\Projets\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Utilisateurs\Samuel\Mes documents\Cours\Enjmin\Projets\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
