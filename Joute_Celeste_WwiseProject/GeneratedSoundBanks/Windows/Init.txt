@@ -1,4 +1,7 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	298126495	Mix_Ambiances			\Default Work Unit\Master Audio Bus\Mix_Ambiances	
+	2175470077	Mix_Object			\Default Work Unit\Master Audio Bus\Mix_Object	
+	3564328885	Mix_Character			\Default Work Unit\Master Audio Bus\Mix_Character	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

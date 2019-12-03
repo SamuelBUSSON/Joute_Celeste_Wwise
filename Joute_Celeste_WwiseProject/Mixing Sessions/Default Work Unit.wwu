@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{701A9C2E-A5FD-407E-8ACC-B0DE2BD2E859}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{6095F784-A31E-4F4E-8AAE-360767F3F18E}" SchemaVersion="94">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{701A9C2E-A5FD-407E-8ACC-B0DE2BD2E859}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6095F784-A31E-4F4E-8AAE-360767F3F18E}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Mix projet" ID="{8BE94A71-1D7A-4FC9-BE1D-02EE13A5C954}">
+					<ObjectList>
+						<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+						<ObjectRef Name="Mix_Character" ID="{9B47C5B3-D152-4AE0-A66B-19F7C53219BF}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+						<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

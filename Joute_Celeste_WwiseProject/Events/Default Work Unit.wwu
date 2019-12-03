@@ -1,6 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{110CC785-9C2D-4DD2-B1D5-71786AA37287}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{76F997D7-5A9F-4913-BC7D-8F150177038F}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{110CC785-9C2D-4DD2-B1D5-71786AA37287}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{76F997D7-5A9F-4913-BC7D-8F150177038F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player_move" ID="{249915E0-ACFF-4039-A96A-7FFC2B27153C}" ShortID="347284709">
+					<ChildrenList>
+						<Event Name="Up" ID="{50314525-6082-4A73-836A-095A0468E428}"/>
+						<Event Name="Down" ID="{2612EAF5-4984-49AC-B4A1-05D964FB4815}"/>
+						<Event Name="Left_Right" ID="{58A14C7A-29B5-405F-8FDE-541EE15D060E}"/>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_Player_Contact" ID="{5B388A6D-C756-4FD9-B9AE-261731D00A25}">
+					<ChildrenList>
+						<Action Name="" ID="{47979F11-C1D0-4E0B-A2B0-12EE54CC629E}" ShortID="536453453">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Contact" ID="{E9E4B117-13A4-49DE-B699-52C6F91ECF5F}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Dash" ID="{0954885F-6D9A-43B1-8418-1C671AAFD914}">
+					<ChildrenList>
+						<Action Name="" ID="{A625AF28-FD8A-43D6-A218-F987264627A3}" ShortID="438438294">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Dash" ID="{D30DC813-FFC5-4891-B608-D2A4FF3BE5FA}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Heal" ID="{58BAB123-6E48-4616-ABC7-53C146E05EC5}">
+					<ChildrenList>
+						<Action Name="" ID="{5A07B842-82CA-4CA3-A9ED-F2663571E6EB}" ShortID="479612938">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Heal" ID="{AFCE90AD-31DD-4C33-B4A8-8DF3529E18ED}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Touch" ID="{EC5BA111-CF58-4506-872F-4EA84AE032AE}">
+					<ChildrenList>
+						<Action Name="" ID="{5EDB78A4-DBA6-4DEB-AAE9-A5A2516AFC48}" ShortID="324326112">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Touch" ID="{5EC8B32A-461E-4806-9908-5C4E5BD53A0E}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Fire" ID="{E2B9FF6D-02AE-4EBC-B04F-43B9B13D1546}">
+					<Comment>Play le choix de tir</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{06CA58CC-2781-43A0-8717-9059F9ED2D3D}" ShortID="877313241">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Fire" ID="{9DF15B2F-5138-4B87-A7E1-42221358B0A7}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Life" ID="{97377C8F-D178-4BFB-936E-36F334C6ACF1}">
+					<ChildrenList>
+						<Action Name="" ID="{10AED0C9-F0DF-44B4-A7A9-8C21A31E200F}" ShortID="189009645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Life" ID="{34ECBFE6-8121-4915-842D-69D81BE97C69}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Explosion_Comete" ID="{BF103210-AB96-4264-B69A-0264165A3D74}">
+					<Comment>Play l'explosion si une comète explose</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{B444695A-A7E9-4FB9-8676-AEE93DFDC137}" ShortID="620184347">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosion_Comete" ID="{EF457855-A979-436C-AB05-2E11ADCEEF52}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Explosion_Etoile" ID="{4295927A-08B5-41B9-9C7E-A920CB7E52AE}">
+					<Comment>Play l'explosion si une étoile explose</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{BE34A056-448E-4EFA-A07D-B0E91C71957A}" ShortID="581763759">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosion_Etoile" ID="{DE62D30E-F105-4595-9C6B-5FC2658B096F}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Explosion_Planete" ID="{34B61989-B5E7-4A91-B5C9-29F7EE1F1992}">
+					<Comment>Play l'explosion si une planète explose</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{897F0ADC-E62A-4F00-AB8A-1820AD0EE32E}" ShortID="467312313">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosion_Planete" ID="{3BE5818C-40F9-46AA-B540-B9FDD11871F0}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Contact_for_Comete" ID="{767F8035-6A1D-4EA4-A50D-BE352ADB78B8}">
+					<Comment>Lance le choix de son (comète, planète ou étoile) si une comète entre en collision avec un astre</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{29ACE4CF-4ECA-45DE-8F6D-CF1A85C68F8B}" ShortID="441349170">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Contact_for_Comete" ID="{9075E1F2-B64E-4C95-87C4-98B21289E8A7}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Contact_for_Etoile" ID="{002C79F5-E345-42EA-B044-57AA2D8CA0B7}">
+					<Comment>Lance le choix de son (comète, planète ou étoile) si une étoile entre en collision avec un astre</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{7736BA6B-F081-4328-AFD6-96B74E074B35}" ShortID="355990502">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Contact_for_Etoile" ID="{96389104-492E-498E-9E0D-EF1B699F7DB9}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Contact_for_Planete" ID="{5B599143-5FB7-4756-8830-B9B2EF9FEA07}">
+					<Comment>Lance le choix de son (comète, planète ou étoile) si une planète entre en collision avec un astre</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{FB9DEA35-4F98-437F-88BE-D03B79E39428}" ShortID="14773894">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Contact_for_Planete" ID="{85C86CBA-131F-4F8F-BF92-BD7FBF9CEA36}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Charge" ID="{FA476D72-AB7F-4C86-8E16-4EA00038068B}">
+					<ChildrenList>
+						<Action Name="" ID="{D944C514-78D6-4CD6-96A3-B02322B5ABC4}" ShortID="44624937">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Charge" ID="{55149525-9669-47F5-B121-96598285642E}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Death" ID="{6B749D5B-56C5-411D-ACAA-9C60A1EFFC2F}">
+					<ChildrenList>
+						<Action Name="" ID="{EDB19C0F-B090-48DA-A87C-369B1D03516A}" ShortID="849257444">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Death" ID="{88C48674-0FDF-4E54-AF11-4AD65042975B}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{ED5231FF-0669-40CA-8957-B687283BAFF5}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}" SchemaVersion="94">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{ED5231FF-0669-40CA-8957-B687283BAFF5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Choix_Astres" ID="{15BF6CA9-5DEF-4530-9CFF-9C637D637BDE}">
+					<Comment>Quel astre est en action ?</Comment>
+					<ChildrenList>
+						<Switch Name="Planete" ID="{7442FF27-C22E-44C9-B773-2D6F30DED9B9}"/>
+						<Switch Name="Comete" ID="{C718E665-380A-44C3-AEFC-E31D42916A80}"/>
+						<Switch Name="Etoile" ID="{D4F6FED1-C2B6-4C19-B93A-19924CD341AC}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

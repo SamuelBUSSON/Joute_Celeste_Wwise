@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B2A27ADB-BE65-425E-8503-C6EB41146671}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{C3EFE1D7-857A-4E1A-878F-C45C1D82753E}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{B2A27ADB-BE65-425E-8503-C6EB41146671}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C3EFE1D7-857A-4E1A-878F-C45C1D82753E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="test" ID="{FE6B2E97-A1B9-46F5-B9C6-4FEFD8E6D3D9}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Player_Fire" ID="{9DF15B2F-5138-4B87-A7E1-42221358B0A7}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Life_Bar" ID="{A4230EA4-3D20-45C8-8111-D8D76D8C2E2B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Comete" ID="{C718E665-380A-44C3-AEFC-E31D42916A80}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

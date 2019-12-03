@@ -1,0 +1,43 @@
+Event	ID	Name			Wwise Object Path	Notes
+	638998366	Play_Player_Heal			\Default Work Unit\Play_Player_Heal	
+	1037682143	Play_Explosion_Comete			\Default Work Unit\Play_Explosion_Comete	Play l'explosion si une comète explose
+	1289724125	Play_Player_Touch			\Default Work Unit\Play_Player_Touch	
+	1408288908	Play_Player_Fire			\Default Work Unit\Play_Player_Fire	Play le choix de tir
+	1722544548	Play_Contact_for_Comete			\Default Work Unit\Play_Contact_for_Comete	Lance le choix de son (comète, planète ou étoile) si une comète entre en collision avec un astre
+	1818497125	Play_Explosion_Planete			\Default Work Unit\Play_Explosion_Planete	Play l'explosion si une planète explose
+	1835085974	Play_Player_Death			\Default Work Unit\Play_Player_Death	
+	2175711460	Play_Player_Dash			\Default Work Unit\Play_Player_Dash	
+	2363478948	Play_Player_Charge			\Default Work Unit\Play_Player_Charge	
+	2512253940	Play_Player_Contact			\Default Work Unit\Play_Player_Contact	
+	3099463575	Play_Contact_for_Etoile			\Default Work Unit\Play_Contact_for_Etoile	Lance le choix de son (comète, planète ou étoile) si une étoile entre en collision avec un astre
+	3938359640	Play_Contact_for_Planete			\Default Work Unit\Play_Contact_for_Planete	Lance le choix de son (comète, planète ou étoile) si une planète entre en collision avec un astre
+	4116265926	Play_Player_Life			\Default Work Unit\Play_Player_Life	
+	4292554548	Play_Explosion_Etoile			\Default Work Unit\Play_Explosion_Etoile	Play l'explosion si une étoile explose
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1901131985	Choix_Astres			\Default Work Unit\Choix_Astres	Quel astre est en action ?
+
+Switch	ID	Name	Switch Group			Notes
+	2578848224	Comete	Choix_Astres			
+	2962930636	Planete	Choix_Astres			
+	2999290755	Etoile	Choix_Astres			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1151835453	Life_Bar			\Default Work Unit\Life_Bar	
+
+Effect plug-ins	ID	Name	Type				Notes
+	632209719	Wwise_Tremolo_(Custom)	Wwise Tremolo			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	52903529	Explosion_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Explosion_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Comete\Explosion_Comete\Explosion_Comete PH		67146
+	74315611	Contact_Comete_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Contact_Comete_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Comete\Contact_for_Comete\Contact_Comete_Comete\Contact_Comete_Comete PH		10218
+	99298299	Player_Death PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Death PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Death\Player_Death PH		240396
+	372441399	Player_Shoot_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Shoot_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Fire\Comete\Player_Shoot_Comete PH		33478
+	400861960	Player_Charge PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Charge PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Charge\Player_Charge PH		45150
+	583525787	Contact_Planete_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Contact_Planete_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Comete\Contact_for_Comete\Contact_Planete_Comete\Contact_Planete_Comete PH		12216
+	659302251	Player_Dash PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Dash PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Dash\Player_Dash PH		240396
+	828453180	Player_Contact PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Contact PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Contact\Player_Contact PH		13172
+	839561306	Contact_Etoile_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Contact_Etoile_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Comete\Contact_for_Comete\Contact_Etoile_Comete\Contact_Etoile_Comete PH		14116
+	862795049	Player_Shoot_Planete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Shoot_Planete PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Fire\Planete\Player_Shoot_Planete PH		11184
+	1068147803	Player_Shoot_Etoile PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Shoot_Etoile PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Fire\Etoile\Player_Shoot_Etoile PH		45150
+

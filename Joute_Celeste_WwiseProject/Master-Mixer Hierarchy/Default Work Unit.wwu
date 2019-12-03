@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{CA35D470-CA72-416E-B246-765C1D54A22E}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}" SchemaVersion="94">
 	<Busses>
-		<WorkUnit Name="Default Work Unit" ID="{CA35D470-CA72-416E-B246-765C1D54A22E}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ReferenceList>
 						<Reference Name="AudioDevice">
-							<ObjectRef Name="System" ID="{E9E3BE97-5F76-4310-8BA1-CEADA7A6D8CE}" WorkUnitID="{F0381A16-5D42-413A-90EE-01BE72151014}"/>
+							<ObjectRef Name="System" ID="{868C3E24-9505-4F78-BFF7-F57939DE5F6D}" WorkUnitID="{1A75F55E-C541-4D65-8EBC-F25E8DF876A9}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Mix_Character" ID="{9B47C5B3-D152-4AE0-A66B-19F7C53219BF}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
