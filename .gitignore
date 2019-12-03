@@ -1,2 +1,6 @@
 .cache/
 Originals/SFX/*.akd
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
