@@ -153,6 +153,7 @@
 				</SwitchContainer>
 				<SwitchContainer Name="Player_Move" ID="{101D2A88-492E-44EF-9D3A-0F430245D546}" ShortID="513319303">
 					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-5</Value>
@@ -205,6 +206,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Player_Move-001" ID="{367928E2-6396-4D48-A91F-2BA03A02351C}" ShortID="309135218">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
@@ -218,7 +222,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Player_Move-001.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="1013397916"/>
+												<File ID="424237803"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -256,6 +260,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Player_Move-001" ID="{806C3B78-8110-4478-89B5-697CD3BDD053}" ShortID="21733744">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
@@ -268,6 +275,9 @@
 										<AudioFileSource Name="Player_Move-001" ID="{91CD7F8E-D56D-4763-BFE9-C100BF5FF773}" ShortID="1013397916">
 											<Language>SFX</Language>
 											<AudioFile>Player_Move-001.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="424237803"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -308,6 +318,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Player_Move-001" ID="{1F09542D-1EFA-4C36-9CD7-4C78A5EB5AD0}" ShortID="1044123685">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
@@ -320,9 +333,6 @@
 										<AudioFileSource Name="Player_Move-001" ID="{50112271-C0C5-4539-8835-C340CD088984}" ShortID="424237803">
 											<Language>SFX</Language>
 											<AudioFile>Player_Move-001.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="1013397916"/>
-											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>

@@ -4,6 +4,12 @@
 		<WorkUnit Name="Default Work Unit" ID="{C3EFE1D7-857A-4E1A-878F-C45C1D82753E}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="test" ID="{FE6B2E97-A1B9-46F5-B9C6-4FEFD8E6D3D9}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Player_Move" ID="{101D2A88-492E-44EF-9D3A-0F430245D546}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Life_Bar" ID="{A4230EA4-3D20-45C8-8111-D8D76D8C2E2B}"/>
