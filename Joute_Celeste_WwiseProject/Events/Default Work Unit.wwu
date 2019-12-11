@@ -203,6 +203,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Player_Move_001" ID="{88D6C388-4623-427A-B955-694C1E2A08E6}">
+					<ChildrenList>
+						<Action Name="" ID="{9914F1DB-8810-416D-A568-1CF99447CE5F}" ShortID="150124689">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Move-001" ID="{806C3B78-8110-4478-89B5-697CD3BDD053}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
