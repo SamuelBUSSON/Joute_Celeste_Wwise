@@ -34,27 +34,6 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Contact_Comete_Comete PH" ID="{454A2528-03CE-4D8C-90DD-694BE8E28BB8}" ShortID="207010684">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Contact_Comete_Comete PH" ID="{4C7EAE5D-06B7-40B6-9CC6-36365F4E84E8}" ShortID="74315611">
-													<Language>SFX</Language>
-													<AudioFile>Contact_Comete_Comete PH.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Contact_Comete_Comete PH" ID="{4C7EAE5D-06B7-40B6-9CC6-36365F4E84E8}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Contact_Etoile_Comete" ID="{1D49DAE9-6B5C-4713-9A6C-D00EA9844193}" ShortID="693582553">
 									<ReferenceList>
@@ -65,27 +44,6 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Contact_Etoile_Comete PH" ID="{CD5118E4-0D80-4FD3-B7E3-604BDB1EAF43}" ShortID="961285476">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Contact_Etoile_Comete PH" ID="{A2609FC9-8464-4CF1-8C6D-19253B498CE9}" ShortID="839561306">
-													<Language>SFX</Language>
-													<AudioFile>Contact_Etoile_Comete PH.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Contact_Etoile_Comete PH" ID="{A2609FC9-8464-4CF1-8C6D-19253B498CE9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Contact_Planete_Comete" ID="{D1AE0926-674F-4299-A6D8-5DC58A7EB94B}" ShortID="64538095">
 									<ReferenceList>
@@ -96,27 +54,6 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Contact_Planete_Comete PH" ID="{23E86329-BF82-49F6-B3FF-E8F9CAAA3D62}" ShortID="24771726">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Contact_Planete_Comete PH" ID="{6177229F-2CF4-492B-ABFA-F1337D6F00EA}" ShortID="583525787">
-													<Language>SFX</Language>
-													<AudioFile>Contact_Planete_Comete PH.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Contact_Planete_Comete PH" ID="{6177229F-2CF4-492B-ABFA-F1337D6F00EA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>

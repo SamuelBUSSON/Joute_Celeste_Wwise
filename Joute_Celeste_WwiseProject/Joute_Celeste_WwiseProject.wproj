@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="Project" SchemaVersion="94" WwiseVersion="v2019.1.5" WwiseBuild="7093">
 	<ProjectInfo>
-		<Project Name="NanoProjet - Joute Celeste" ID="{F39824F3-0B75-44A3-90A7-B44BE4D37993}">
+		<Project Name="Joute_Celeste_WwiseProject" ID="{F39824F3-0B75-44A3-90A7-B44BE4D37993}">
 			<Platforms>
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{C28D6800-66B5-442B-888B-63BB9C96283F}"/>
 			</Platforms>
@@ -9134,6 +9134,9 @@
 					</ObsOccCurve>
 				</ObsOccCurves>
 			</EnvironmentalSettings>
+			<LogCentralIgnoreList>
+				<IgnoreItem MessageId="MissingOriginalFile"/>
+			</LogCentralIgnoreList>
 			<DefaultConversion Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}"/>
 			<PhysicalFolderList>
 				<PhysicalFolder Path="Actor-Mixer Hierarchy">

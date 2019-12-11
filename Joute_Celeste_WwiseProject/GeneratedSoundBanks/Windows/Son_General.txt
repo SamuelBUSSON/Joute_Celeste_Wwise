@@ -263,6 +263,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	490166798	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	492715124	Wwise Pitch Shifter (Custom)	Wwise Pitch Shifter			
 	503852030	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	506891147	Plate_Small	Wwise RoomVerb			
 	506964284	Wwise Pitch Shifter (Custom)	Wwise Pitch Shifter			
 	524791432	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	539993087	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
@@ -289,6 +290,8 @@ Effect plug-ins	ID	Name	Type				Notes
 	1057443910	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	1059035731	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	1059488289	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
+	2900412812	Robotic_Trash	Wwise RoomVerb			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	292198	FM 04	Wwise Synth One		\Actor-Mixer Hierarchy\Factory Synth One\Instruments\FM 04\FM 04	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
@@ -360,22 +363,17 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	61650185	Player_Charge	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Charge_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Charge\Player_Charge		384064
-	74315611	Contact_Comete_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Contact_Comete_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Comete\Contact_for_Comete\Contact_Comete_Comete\Contact_Comete_Comete PH		10218
 	84714200	Aura2_Plus	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Aura2_Plus_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Aura\Aura1 or 2\Aura2_State\State1to2\Aura2_Plus		151272
 	86387383	Player_Dash2	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Dash2_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Dash2\Player_Dash2		96064
 	215996882	Comete_Explosion	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Comete_Explosion_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Comete\Explosion_Comete\Comete_Explosion		384064
 	224565699	Aura2_Moins	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Aura2_Moins_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Aura\Aura1 or 2\Aura2_State\State2to1\Aura2_Moins		151272
 	296645757	Player_Dash1	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Dash1_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Dash\Player_Dash1		96064
-	372441399	Player_Shoot_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Shoot_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Fire\Comete\Player_Shoot_Comete PH		33478
+	407296692	Player_Lancer	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Lancer_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Fire\Comete\Player_Lancer		48064
 	424237803	Player_Move-001	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Move-001_D79FB2B7.wem		\Actor-Mixer Hierarchy\Character\Player_Move_Solo\Player_Move-001		192064
 	450593474	Player_Death	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Death_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Death\Player_Death		1920064
 	541052100	Etoile_Explosion	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Etoile_Explosion_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Etoile\Explosion_Etoile\Etoile_Explosion		480064
-	583525787	Contact_Planete_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Contact_Planete_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Comete\Contact_for_Comete\Contact_Planete_Comete\Contact_Planete_Comete PH		12216
 	590515303	Aura1_Moins	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Aura1_Moins_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Aura\Aura1 or 2\Aura1_State\State2to1\Aura1_Moins		336064
 	781961406	Aura1_Plus	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Aura1_Plus_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Aura\Aura1 or 2\Aura1_State\State1to2\Aura1_Plus		336064
-	839561306	Contact_Etoile_Comete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Contact_Etoile_Comete PH_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Comete\Contact_for_Comete\Contact_Etoile_Comete\Contact_Etoile_Comete PH		14116
-	862795049	Player_Shoot_Planete PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Shoot_Planete PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Fire\Planete\Player_Shoot_Planete PH		11184
 	954387872	Planete_Explosion	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Planete_Explosion_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Planete\Explosion_Planete\Planete_Explosion		384064
 	1047473391	Player_Attrack	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Attrack_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Attrack\Player_Attrack		288276
-	1068147803	Player_Shoot_Etoile PH	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Shoot_Etoile PH_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Fire\Etoile\Player_Shoot_Etoile PH		45150
 

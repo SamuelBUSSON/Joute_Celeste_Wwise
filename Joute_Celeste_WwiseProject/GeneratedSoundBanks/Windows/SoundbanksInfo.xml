@@ -44,10 +44,6 @@
 					<ShortName>Player_Charge.wav</ShortName>
 					<Path>SFX\Player_Charge_10C4C929.wem</Path>
 				</File>
-				<File Id="74315611" Language="SFX">
-					<ShortName>Contact_Comete_Comete PH.wav</ShortName>
-					<Path>SFX\Contact_Comete_Comete PH_10C4C929.wem</Path>
-				</File>
 				<File Id="84714200" Language="SFX">
 					<ShortName>Aura2_Plus.wav</ShortName>
 					<Path>SFX\Aura2_Plus_10C4C929.wem</Path>
@@ -68,9 +64,9 @@
 					<ShortName>Player_Dash1.wav</ShortName>
 					<Path>SFX\Player_Dash1_10C4C929.wem</Path>
 				</File>
-				<File Id="372441399" Language="SFX">
-					<ShortName>Player_Shoot_Comete PH.wav</ShortName>
-					<Path>SFX\Player_Shoot_Comete PH_10C4C929.wem</Path>
+				<File Id="407296692" Language="SFX">
+					<ShortName>Player_Lancer.wav</ShortName>
+					<Path>SFX\Player_Lancer_10C4C929.wem</Path>
 				</File>
 				<File Id="424237803" Language="SFX">
 					<ShortName>Player_Move-001.wav</ShortName>
@@ -84,10 +80,6 @@
 					<ShortName>Etoile_Explosion.wav</ShortName>
 					<Path>SFX\Etoile_Explosion_10C4C929.wem</Path>
 				</File>
-				<File Id="583525787" Language="SFX">
-					<ShortName>Contact_Planete_Comete PH.wav</ShortName>
-					<Path>SFX\Contact_Planete_Comete PH_10C4C929.wem</Path>
-				</File>
 				<File Id="590515303" Language="SFX">
 					<ShortName>Aura1_Moins.wav</ShortName>
 					<Path>SFX\Aura1_Moins_10C4C929.wem</Path>
@@ -96,14 +88,6 @@
 					<ShortName>Aura1_Plus.wav</ShortName>
 					<Path>SFX\Aura1_Plus_10C4C929.wem</Path>
 				</File>
-				<File Id="839561306" Language="SFX">
-					<ShortName>Contact_Etoile_Comete PH.wav</ShortName>
-					<Path>SFX\Contact_Etoile_Comete PH_10C4C929.wem</Path>
-				</File>
-				<File Id="862795049" Language="SFX">
-					<ShortName>Player_Shoot_Planete PH.wav</ShortName>
-					<Path>SFX\Player_Shoot_Planete PH_10C4C929.wem</Path>
-				</File>
 				<File Id="954387872" Language="SFX">
 					<ShortName>Planete_Explosion.wav</ShortName>
 					<Path>SFX\Planete_Explosion_10C4C929.wem</Path>
@@ -111,10 +95,6 @@
 				<File Id="1047473391" Language="SFX">
 					<ShortName>Player_Attrack.wav</ShortName>
 					<Path>SFX\Player_Attrack_10C4C929.wem</Path>
-				</File>
-				<File Id="1068147803" Language="SFX">
-					<ShortName>Player_Shoot_Etoile PH.wav</ShortName>
-					<Path>SFX\Player_Shoot_Etoile PH_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

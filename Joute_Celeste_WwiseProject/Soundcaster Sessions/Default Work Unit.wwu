@@ -4,6 +4,12 @@
 		<WorkUnit Name="Default Work Unit" ID="{C3EFE1D7-857A-4E1A-878F-C45C1D82753E}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="test" ID="{FE6B2E97-A1B9-46F5-B9C6-4FEFD8E6D3D9}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Player_Fire" ID="{9DF15B2F-5138-4B87-A7E1-42221358B0A7}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Life_Bar" ID="{A4230EA4-3D20-45C8-8111-D8D76D8C2E2B}"/>
@@ -13,8 +19,8 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Aura1" ID="{54858DD2-6F72-493E-88D7-E685250B838F}"/>
-						<CurrentSwitchRef Name="Comete" ID="{C718E665-380A-44C3-AEFC-E31D42916A80}"/>
-						<CurrentSwitchRef Name="State3to2" ID="{EC9DF89C-E741-437F-8C79-988C54E25E3F}"/>
+						<CurrentSwitchRef Name="Etoile" ID="{D4F6FED1-C2B6-4C19-B93A-19924CD341AC}"/>
+						<CurrentSwitchRef Name="State1to2" ID="{0CACD83F-D98D-488A-B74C-B5B3C045BD36}"/>
 						<CurrentSwitchRef Name="Down" ID="{AE9D03D0-8236-4C3F-84F8-B586231304AF}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
