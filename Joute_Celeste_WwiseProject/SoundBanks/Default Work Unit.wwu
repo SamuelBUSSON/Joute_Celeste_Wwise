@@ -5,10 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Son_General" ID="{94CBA6AE-7090-4CB4-817C-FF3D4C5B6D0B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Character" ID="{3E655350-4674-4255-9282-B5E7A676BCA2}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="In_Game_Items" ID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Ambiances" ID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}" WorkUnitID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Player_Charge" ID="{55149525-9669-47F5-B121-96598285642E}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" WorkUnitID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

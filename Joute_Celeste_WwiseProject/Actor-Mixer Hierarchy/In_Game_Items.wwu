@@ -154,6 +154,13 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<RandomSequenceContainer Name="Explosion_Comete" ID="{EF457855-A979-436C-AB05-2E11ADCEEF52}" ShortID="287240115">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
@@ -163,7 +170,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Explosion_Comete PH" ID="{BF47C34C-CFF6-40FF-9549-248720CC9200}" ShortID="1035580580">
+								<Sound Name="Comete_Explosion" ID="{50DE5161-585A-4A8A-B0E9-77E97BA7DAAC}" ShortID="458775917">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
@@ -173,16 +180,26 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Explosion_Comete PH" ID="{BAB9AEC5-E5B0-48A9-B0F8-E3D21FED0949}" ShortID="52903529">
+										<AudioFileSource Name="Comete_Explosion" ID="{13EBD237-22B4-4D2E-8C21-E73C65B87511}" ShortID="215996882">
 											<Language>SFX</Language>
-											<AudioFile>Explosion_Comete PH.wav</AudioFile>
+											<AudioFile>Comete_Explosion.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Explosion_Comete PH" ID="{BAB9AEC5-E5B0-48A9-B0F8-E3D21FED0949}" Platform="Linked"/>
+										<ActiveSource Name="Comete_Explosion" ID="{13EBD237-22B4-4D2E-8C21-E73C65B87511}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Move_Comete" ID="{95210E65-9438-472C-BEA7-0113D9581414}" ShortID="504965090">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+							</ReferenceList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
@@ -270,6 +287,44 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<RandomSequenceContainer Name="Explosion_Etoile" ID="{DE62D30E-F105-4595-9C6B-5FC2658B096F}" ShortID="334994887">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Etoile_Explosion" ID="{7D9D6207-FDE4-4F0D-B8C4-C604469D0E17}" ShortID="787407491">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Etoile_Explosion" ID="{30D5EBEC-B4EE-47A7-A977-82B601210781}" ShortID="541052100">
+											<Language>SFX</Language>
+											<AudioFile>Etoile_Explosion.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Etoile_Explosion" ID="{30D5EBEC-B4EE-47A7-A977-82B601210781}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Move_Etoile" ID="{738870A2-49D7-4D74-BDC4-43D44D509A08}" ShortID="594198413">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
@@ -284,6 +339,13 @@
 				<Folder Name="Planete" ID="{1DDD2458-7305-4113-BBC2-E637C5C72B2E}" ShortID="256012781">
 					<ChildrenList>
 						<RandomSequenceContainer Name="Explosion_Planete" ID="{3BE5818C-40F9-46AA-B540-B9FDD11871F0}" ShortID="914837739">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
@@ -292,6 +354,27 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Planete_Explosion" ID="{8B193C2E-D54C-4940-9332-A14F79FE171B}" ShortID="572155757">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Planete_Explosion" ID="{89610945-F8B2-40F4-9BE9-B28A2C5412C7}" ShortID="954387872">
+											<Language>SFX</Language>
+											<AudioFile>Planete_Explosion.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Planete_Explosion" ID="{89610945-F8B2-40F4-9BE9-B28A2C5412C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<SwitchContainer Name="Contact_for_Planete" ID="{85C86CBA-131F-4F8F-BF92-BD7FBF9CEA36}" ShortID="1021156632">
 							<ReferenceList>
@@ -374,6 +457,16 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<RandomSequenceContainer Name="Move_Planete" ID="{378E3B3B-A521-472B-94F9-D4FB11B618DF}" ShortID="1010555107">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

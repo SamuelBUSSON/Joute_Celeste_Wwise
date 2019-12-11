@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\WWISE 2\WWISE\Joute_Celeste_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\WWISE 2\WWISE\Joute_Celeste_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\WWISE 2\WWISE\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\WWISE 2\WWISE\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,53 +21,79 @@
 			<ShortName>Son_General</ShortName>
 			<Path>Son_General.bnk</Path>
 			<IncludedEvents>
+				<Event Id="586774143" Name="Play_Aura1_or_2" ObjectPath="\Events\Default Work Unit\Play_Aura1_or_2"/>
 				<Event Id="1722544548" Name="Play_Contact_for_Comete" ObjectPath="\Events\Default Work Unit\Play_Contact_for_Comete"/>
 				<Event Id="3099463575" Name="Play_Contact_for_Etoile" ObjectPath="\Events\Default Work Unit\Play_Contact_for_Etoile"/>
 				<Event Id="3938359640" Name="Play_Contact_for_Planete" ObjectPath="\Events\Default Work Unit\Play_Contact_for_Planete"/>
 				<Event Id="1037682143" Name="Play_Explosion_Comete" ObjectPath="\Events\Default Work Unit\Play_Explosion_Comete"/>
 				<Event Id="4292554548" Name="Play_Explosion_Etoile" ObjectPath="\Events\Default Work Unit\Play_Explosion_Etoile"/>
 				<Event Id="1818497125" Name="Play_Explosion_Planete" ObjectPath="\Events\Default Work Unit\Play_Explosion_Planete"/>
+				<Event Id="319966612" Name="Play_Player_Attrack" ObjectPath="\Events\Default Work Unit\Play_Player_Attrack"/>
 				<Event Id="2363478948" Name="Play_Player_Charge" ObjectPath="\Events\Default Work Unit\Play_Player_Charge"/>
-				<Event Id="2512253940" Name="Play_Player_Contact" ObjectPath="\Events\Default Work Unit\Play_Player_Contact"/>
 				<Event Id="2175711460" Name="Play_Player_Dash" ObjectPath="\Events\Default Work Unit\Play_Player_Dash"/>
+				<Event Id="168627934" Name="Play_Player_Dash2" ObjectPath="\Events\Default Work Unit\Play_Player_Dash2"/>
 				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Play_Player_Death"/>
 				<Event Id="1408288908" Name="Play_Player_Fire" ObjectPath="\Events\Default Work Unit\Play_Player_Fire"/>
 				<Event Id="638998366" Name="Play_Player_Heal" ObjectPath="\Events\Default Work Unit\Play_Player_Heal"/>
-				<Event Id="4116265926" Name="Play_Player_Life" ObjectPath="\Events\Default Work Unit\Play_Player_Life"/>
+				<Event Id="1613540383" Name="Play_Player_Move" ObjectPath="\Events\Default Work Unit\Play_Player_Move"/>
 				<Event Id="1289724125" Name="Play_Player_Touch" ObjectPath="\Events\Default Work Unit\Play_Player_Touch"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="52903529" Language="SFX">
-					<ShortName>Explosion_Comete PH.wav</ShortName>
-					<Path>SFX\Explosion_Comete PH_10C4C929.wem</Path>
+				<File Id="61650185" Language="SFX">
+					<ShortName>Player_Charge.wav</ShortName>
+					<Path>SFX\Player_Charge_10C4C929.wem</Path>
 				</File>
 				<File Id="74315611" Language="SFX">
 					<ShortName>Contact_Comete_Comete PH.wav</ShortName>
 					<Path>SFX\Contact_Comete_Comete PH_10C4C929.wem</Path>
 				</File>
-				<File Id="99298299" Language="SFX">
-					<ShortName>Player_Death PH.wav</ShortName>
-					<Path>SFX\Player_Death PH_10C4C929.wem</Path>
+				<File Id="84714200" Language="SFX">
+					<ShortName>Aura2_Plus.wav</ShortName>
+					<Path>SFX\Aura2_Plus_10C4C929.wem</Path>
+				</File>
+				<File Id="86387383" Language="SFX">
+					<ShortName>Player_Dash2.wav</ShortName>
+					<Path>SFX\Player_Dash2_10C4C929.wem</Path>
+				</File>
+				<File Id="215996882" Language="SFX">
+					<ShortName>Comete_Explosion.wav</ShortName>
+					<Path>SFX\Comete_Explosion_10C4C929.wem</Path>
+				</File>
+				<File Id="224565699" Language="SFX">
+					<ShortName>Aura2_Moins.wav</ShortName>
+					<Path>SFX\Aura2_Moins_10C4C929.wem</Path>
+				</File>
+				<File Id="296645757" Language="SFX">
+					<ShortName>Player_Dash1.wav</ShortName>
+					<Path>SFX\Player_Dash1_10C4C929.wem</Path>
 				</File>
 				<File Id="372441399" Language="SFX">
 					<ShortName>Player_Shoot_Comete PH.wav</ShortName>
 					<Path>SFX\Player_Shoot_Comete PH_10C4C929.wem</Path>
 				</File>
-				<File Id="400861960" Language="SFX">
-					<ShortName>Player_Charge PH.wav</ShortName>
-					<Path>SFX\Player_Charge PH_10C4C929.wem</Path>
+				<File Id="450593474" Language="SFX">
+					<ShortName>Player_Death.wav</ShortName>
+					<Path>SFX\Player_Death_10C4C929.wem</Path>
+				</File>
+				<File Id="541052100" Language="SFX">
+					<ShortName>Etoile_Explosion.wav</ShortName>
+					<Path>SFX\Etoile_Explosion_10C4C929.wem</Path>
 				</File>
 				<File Id="583525787" Language="SFX">
 					<ShortName>Contact_Planete_Comete PH.wav</ShortName>
 					<Path>SFX\Contact_Planete_Comete PH_10C4C929.wem</Path>
 				</File>
-				<File Id="659302251" Language="SFX">
-					<ShortName>Player_Dash PH.wav</ShortName>
-					<Path>SFX\Player_Dash PH_10C4C929.wem</Path>
+				<File Id="590515303" Language="SFX">
+					<ShortName>Aura1_Moins.wav</ShortName>
+					<Path>SFX\Aura1_Moins_10C4C929.wem</Path>
 				</File>
-				<File Id="828453180" Language="SFX">
-					<ShortName>Player_Contact PH.wav</ShortName>
-					<Path>SFX\Player_Contact PH_10C4C929.wem</Path>
+				<File Id="619621665" Language="SFX">
+					<ShortName>Player_Move.wav</ShortName>
+					<Path>SFX\Player_Move_10C4C929.wem</Path>
+				</File>
+				<File Id="781961406" Language="SFX">
+					<ShortName>Aura1_Plus.wav</ShortName>
+					<Path>SFX\Aura1_Plus_10C4C929.wem</Path>
 				</File>
 				<File Id="839561306" Language="SFX">
 					<ShortName>Contact_Etoile_Comete PH.wav</ShortName>
@@ -76,6 +102,14 @@
 				<File Id="862795049" Language="SFX">
 					<ShortName>Player_Shoot_Planete PH.wav</ShortName>
 					<Path>SFX\Player_Shoot_Planete PH_10C4C929.wem</Path>
+				</File>
+				<File Id="954387872" Language="SFX">
+					<ShortName>Planete_Explosion.wav</ShortName>
+					<Path>SFX\Planete_Explosion_10C4C929.wem</Path>
+				</File>
+				<File Id="1047473391" Language="SFX">
+					<ShortName>Player_Attrack.wav</ShortName>
+					<Path>SFX\Player_Attrack_10C4C929.wem</Path>
 				</File>
 				<File Id="1068147803" Language="SFX">
 					<ShortName>Player_Shoot_Etoile PH.wav</ShortName>

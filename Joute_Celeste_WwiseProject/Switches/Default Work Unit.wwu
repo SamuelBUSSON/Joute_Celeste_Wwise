@@ -11,6 +11,31 @@
 						<Switch Name="Etoile" ID="{D4F6FED1-C2B6-4C19-B93A-19924CD341AC}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Aura_State" ID="{6FAFF521-0933-49E6-8079-C3CD2CBE9ECF}">
+					<ChildrenList>
+						<Switch Name="State1to2" ID="{0CACD83F-D98D-488A-B74C-B5B3C045BD36}"/>
+						<Switch Name="State2to1" ID="{46EC8B30-E7CF-4BF4-8328-3CC799DB45B8}"/>
+						<Switch Name="State2to3" ID="{E91F225F-BAE0-4A1E-9A05-0AAC20A5E91D}"/>
+						<Switch Name="State3to2" ID="{EC9DF89C-E741-437F-8C79-988C54E25E3F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Player_Move" ID="{392914B4-8360-4FAB-9BF3-8029D4F40048}">
+					<ChildrenList>
+						<Switch Name="Up" ID="{30CF4C21-578D-4F02-AFD5-3A50AA3F5D8E}"/>
+						<Switch Name="Down" ID="{AE9D03D0-8236-4C3F-84F8-B586231304AF}"/>
+						<Switch Name="Right_Left" ID="{213832A5-E5DE-4993-9521-A35E1FFF75E7}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Witch_Aura" ID="{E17F4895-E039-40AC-A30E-E4E34A532EA7}">
+					<ChildrenList>
+						<Switch Name="Aura1" ID="{54858DD2-6F72-493E-88D7-E685250B838F}">
+							<Comment>Aura electrique</Comment>
+						</Switch>
+						<Switch Name="Aura2" ID="{29374295-C3F2-4601-ABD7-F69195F540FE}">
+							<Comment>Aura lumineuse</Comment>
+						</Switch>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

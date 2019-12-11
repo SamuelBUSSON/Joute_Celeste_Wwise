@@ -3,24 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{76F997D7-5A9F-4913-BC7D-8F150177038F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Player_move" ID="{249915E0-ACFF-4039-A96A-7FFC2B27153C}" ShortID="347284709">
-					<ChildrenList>
-						<Event Name="Up" ID="{50314525-6082-4A73-836A-095A0468E428}"/>
-						<Event Name="Down" ID="{2612EAF5-4984-49AC-B4A1-05D964FB4815}"/>
-						<Event Name="Left_Right" ID="{58A14C7A-29B5-405F-8FDE-541EE15D060E}"/>
-					</ChildrenList>
-				</Folder>
-				<Event Name="Play_Player_Contact" ID="{5B388A6D-C756-4FD9-B9AE-261731D00A25}">
-					<ChildrenList>
-						<Action Name="" ID="{47979F11-C1D0-4E0B-A2B0-12EE54CC629E}" ShortID="536453453">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Contact" ID="{E9E4B117-13A4-49DE-B699-52C6F91ECF5F}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Player_Dash" ID="{0954885F-6D9A-43B1-8418-1C671AAFD914}">
 					<ChildrenList>
 						<Action Name="" ID="{A625AF28-FD8A-43D6-A218-F987264627A3}" ShortID="438438294">
@@ -61,17 +43,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Player_Fire" ID="{9DF15B2F-5138-4B87-A7E1-42221358B0A7}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Player_Life" ID="{97377C8F-D178-4BFB-936E-36F334C6ACF1}">
-					<ChildrenList>
-						<Action Name="" ID="{10AED0C9-F0DF-44B4-A7A9-8C21A31E200F}" ShortID="189009645">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Life" ID="{34ECBFE6-8121-4915-842D-69D81BE97C69}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -166,6 +137,67 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Player_Death" ID="{88C48674-0FDF-4E54-AF11-4AD65042975B}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Move" ID="{37F7E766-6591-4FFC-BE28-F14DD8FAAF39}">
+					<ChildrenList>
+						<Action Name="" ID="{0C8618B7-E06C-41F3-A796-22D1B64AFC37}" ShortID="937752147">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Move" ID="{101D2A88-492E-44EF-9D3A-0F430245D546}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Dash2" ID="{94D8EA60-DB4A-4F2D-9568-5A2A3053B8BF}">
+					<ChildrenList>
+						<Action Name="" ID="{EAF6600D-BDC6-4D09-9F4D-83D898CE18C3}" ShortID="470880206">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Dash2" ID="{1EE036D5-1F57-47D5-BCC3-8BE04A55A5B9}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Attrack" ID="{1DDF9644-0B43-4AEE-83ED-7012775B6084}">
+					<ChildrenList>
+						<Action Name="" ID="{21E8E9CE-E9DA-4C5B-BABD-D6180B4CEA6A}" ShortID="138325294">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Attrack" ID="{E9E4B117-13A4-49DE-B699-52C6F91ECF5F}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Aura1_or_2" ID="{1FA1DE25-9D21-41DA-8A71-594E44122A72}">
+					<ChildrenList>
+						<Action Name="" ID="{A68E8345-6114-4496-BD9C-38F6F7589F90}" ShortID="622510036">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aura1 or 2" ID="{1F41C120-D671-4F95-AAF5-AA63CF7600A9}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Player_Move" ID="{570D9CD6-1EEF-4B21-83D3-E0A9DE7AB1CC}">
+					<Comment>Le player lache la touche -&gt; ça arrête le son du move</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{201FB701-C973-42B9-B5AF-9798A11A04FC}" ShortID="871375480">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.25"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Move" ID="{101D2A88-492E-44EF-9D3A-0F430245D546}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
