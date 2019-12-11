@@ -25,7 +25,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Touch" ID="{EC5BA111-CF58-4506-872F-4EA84AE032AE}">
+				<Event Name="Play_Player_Hit" ID="{EC5BA111-CF58-4506-872F-4EA84AE032AE}">
 					<ChildrenList>
 						<Action Name="" ID="{5EDB78A4-DBA6-4DEB-AAE9-A5A2516AFC48}" ShortID="324326112">
 							<ReferenceList>
@@ -142,17 +142,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Move" ID="{37F7E766-6591-4FFC-BE28-F14DD8FAAF39}">
-					<ChildrenList>
-						<Action Name="" ID="{0C8618B7-E06C-41F3-A796-22D1B64AFC37}" ShortID="937752147">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Move" ID="{101D2A88-492E-44EF-9D3A-0F430245D546}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Player_Dash2" ID="{94D8EA60-DB4A-4F2D-9568-5A2A3053B8BF}">
 					<ChildrenList>
 						<Action Name="" ID="{EAF6600D-BDC6-4D09-9F4D-83D898CE18C3}" ShortID="470880206">
@@ -186,26 +175,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_Player_Move" ID="{570D9CD6-1EEF-4B21-83D3-E0A9DE7AB1CC}">
-					<Comment>Le player lache la touche -&gt; ça arrête le son du move</Comment>
+				<Event Name="Play_Player_Move_Solo" ID="{00DB5F38-AAF7-4553-B8D5-BD2738266086}">
 					<ChildrenList>
-						<Action Name="" ID="{201FB701-C973-42B9-B5AF-9798A11A04FC}" ShortID="871375480">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Delay" Type="Real64" Value="0.25"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-							</PropertyList>
+						<Action Name="" ID="{63F0D091-1280-42DD-84E6-3BD0F060DEB4}" ShortID="253115975">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Move" ID="{101D2A88-492E-44EF-9D3A-0F430245D546}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+									<ObjectRef Name="Player_Move_Solo" ID="{90015F2F-BE87-4313-9067-DE1A9E3D505D}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Move_Solo" ID="{00DB5F38-AAF7-4553-B8D5-BD2738266086}">
+				<Event Name="Stop_Player_Move_Solo" ID="{30E1EF95-BA67-4CBB-A57F-641451199D98}">
 					<ChildrenList>
-						<Action Name="" ID="{63F0D091-1280-42DD-84E6-3BD0F060DEB4}" ShortID="253115975">
+						<Action Name="" ID="{ED031300-1292-4E1E-A37A-78B60BFB6A03}" ShortID="257431234">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Player_Move_Solo" ID="{90015F2F-BE87-4313-9067-DE1A9E3D505D}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>

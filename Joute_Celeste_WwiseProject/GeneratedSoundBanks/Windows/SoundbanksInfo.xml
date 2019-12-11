@@ -35,10 +35,9 @@
 				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Play_Player_Death"/>
 				<Event Id="1408288908" Name="Play_Player_Fire" ObjectPath="\Events\Default Work Unit\Play_Player_Fire"/>
 				<Event Id="638998366" Name="Play_Player_Heal" ObjectPath="\Events\Default Work Unit\Play_Player_Heal"/>
-				<Event Id="1613540383" Name="Play_Player_Move" ObjectPath="\Events\Default Work Unit\Play_Player_Move"/>
+				<Event Id="1864892471" Name="Play_Player_Hit" ObjectPath="\Events\Default Work Unit\Play_Player_Hit"/>
 				<Event Id="365655931" Name="Play_Player_Move_Solo" ObjectPath="\Events\Default Work Unit\Play_Player_Move_Solo"/>
-				<Event Id="1289724125" Name="Play_Player_Touch" ObjectPath="\Events\Default Work Unit\Play_Player_Touch"/>
-				<Event Id="2124342817" Name="Stop_Player_Move" ObjectPath="\Events\Default Work Unit\Stop_Player_Move"/>
+				<Event Id="2405542185" Name="Stop_Player_Move_Solo" ObjectPath="\Events\Default Work Unit\Stop_Player_Move_Solo"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="61650185" Language="SFX">
