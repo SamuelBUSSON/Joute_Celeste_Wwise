@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\WWISE 2\WWISE\Joute_Celeste_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\WWISE 2\WWISE\Joute_Celeste_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\WWISE 2\WWISE\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\WWISE 2\WWISE\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -36,7 +36,9 @@
 				<Event Id="1408288908" Name="Play_Player_Fire" ObjectPath="\Events\Default Work Unit\Play_Player_Fire"/>
 				<Event Id="638998366" Name="Play_Player_Heal" ObjectPath="\Events\Default Work Unit\Play_Player_Heal"/>
 				<Event Id="1613540383" Name="Play_Player_Move" ObjectPath="\Events\Default Work Unit\Play_Player_Move"/>
+				<Event Id="365655931" Name="Play_Player_Move_Solo" ObjectPath="\Events\Default Work Unit\Play_Player_Move_Solo"/>
 				<Event Id="1289724125" Name="Play_Player_Touch" ObjectPath="\Events\Default Work Unit\Play_Player_Touch"/>
+				<Event Id="2124342817" Name="Stop_Player_Move" ObjectPath="\Events\Default Work Unit\Stop_Player_Move"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="61650185" Language="SFX">
@@ -71,6 +73,10 @@
 					<ShortName>Player_Shoot_Comete PH.wav</ShortName>
 					<Path>SFX\Player_Shoot_Comete PH_10C4C929.wem</Path>
 				</File>
+				<File Id="424237803" Language="SFX">
+					<ShortName>Player_Move-001.wav</ShortName>
+					<Path>SFX\Player_Move-001_D79FB2B7.wem</Path>
+				</File>
 				<File Id="450593474" Language="SFX">
 					<ShortName>Player_Death.wav</ShortName>
 					<Path>SFX\Player_Death_10C4C929.wem</Path>
@@ -86,10 +92,6 @@
 				<File Id="590515303" Language="SFX">
 					<ShortName>Aura1_Moins.wav</ShortName>
 					<Path>SFX\Aura1_Moins_10C4C929.wem</Path>
-				</File>
-				<File Id="619621665" Language="SFX">
-					<ShortName>Player_Move.wav</ShortName>
-					<Path>SFX\Player_Move_10C4C929.wem</Path>
 				</File>
 				<File Id="781961406" Language="SFX">
 					<ShortName>Aura1_Plus.wav</ShortName>
