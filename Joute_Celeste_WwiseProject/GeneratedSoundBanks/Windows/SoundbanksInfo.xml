@@ -109,6 +109,10 @@
 					<ShortName>Aura1_Plus.wav</ShortName>
 					<Path>SFX\Aura1_Plus_10C4C929.wem</Path>
 				</File>
+				<File Id="836948961" Language="SFX">
+					<ShortName>Player_Attrack-001.wav</ShortName>
+					<Path>SFX\Player_Attrack-001_10C4C929.wem</Path>
+				</File>
 				<File Id="893303029" Language="SFX">
 					<ShortName>Move_Comete.wav</ShortName>
 					<Path>SFX\Move_Comete_10C4C929.wem</Path>
@@ -128,10 +132,6 @@
 				<File Id="1021363999" Language="SFX">
 					<ShortName>Player_Hit2.wav</ShortName>
 					<Path>SFX\Player_Hit2_10C4C929.wem</Path>
-				</File>
-				<File Id="1047473391" Language="SFX">
-					<ShortName>Player_Attrack.wav</ShortName>
-					<Path>SFX\Player_Attrack_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
