@@ -211,6 +211,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Player_Charge_Loop" ID="{68B02F77-F779-461A-B008-18FE5ABA548E}">
+					<ChildrenList>
+						<Action Name="" ID="{7A8C0A37-E585-42D0-9066-1196F83441C0}" ShortID="958977958">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Charge_Loop" ID="{9D94F3F7-F2D0-4B52-9C7C-22C57925AE93}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

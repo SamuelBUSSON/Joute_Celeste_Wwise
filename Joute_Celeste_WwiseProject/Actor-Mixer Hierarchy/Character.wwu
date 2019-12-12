@@ -1020,6 +1020,44 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player_Charge_Loop" ID="{9D94F3F7-F2D0-4B52-9C7C-22C57925AE93}" ShortID="228274363">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Player_Charge_Loop" ID="{24280680-64B9-420C-8C70-71968A637C85}" ShortID="1008852802">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Player_Charge_Loop" ID="{CFFC2C35-DF0B-4B61-8369-57EFEC48574B}" ShortID="290665148">
+									<Language>SFX</Language>
+									<AudioFile>Player_Charge_Loop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Player_Charge_Loop" ID="{CFFC2C35-DF0B-4B61-8369-57EFEC48574B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

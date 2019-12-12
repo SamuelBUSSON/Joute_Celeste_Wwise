@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Actor-Mixer Hierarchy\Ambiances.wwu" DateLow="1574776351" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Actor-Mixer Hierarchy\Character.wwu" DateLow="1576080275" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Actor-Mixer Hierarchy\Ambiances.wwu" DateLow="1576156540" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Actor-Mixer Hierarchy\Character.wwu" DateLow="1576156264" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1574771238" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Actor-Mixer Hierarchy\In_Game_Items.wwu" DateLow="1576080370" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Actor-Mixer Hierarchy\In_Game_Items.wwu" DateLow="1576155092" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
@@ -13,10 +13,10 @@
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Effects\Factory Effects.wwu" DateLow="1576080275" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Events\Default Work Unit.wwu" DateLow="1576070009" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Events\Default Work Unit.wwu" DateLow="1576156540" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1574949789" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Joute_Celeste_WwiseProject.Lolo.wsettings" DateLow="1576081554" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Joute_Celeste_WwiseProject.Lolo.wsettings" DateLow="1576161234" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Joute_Celeste_WwiseProject.wproj" DateLow="1576080370" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1576058349" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1574950211" DateHigh="0"/>
@@ -25,7 +25,7 @@
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Queries\Factory Queries.wwu" DateLow="1574010614" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1576058349" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1576080275" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1576154959" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\States\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1576057897" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1574550846" DateHigh="0"/>

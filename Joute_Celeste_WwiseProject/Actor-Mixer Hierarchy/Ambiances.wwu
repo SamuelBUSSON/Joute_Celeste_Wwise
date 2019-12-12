@@ -28,6 +28,13 @@
 					</ReferenceList>
 				</BlendContainer>
 				<RandomSequenceContainer Name="Titre jap" ID="{46CA25EF-6A6F-4F28-B8A6-D6864D96B278}" ShortID="400029018">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
