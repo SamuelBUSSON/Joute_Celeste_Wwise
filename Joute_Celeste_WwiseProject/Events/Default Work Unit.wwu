@@ -30,7 +30,7 @@
 						<Action Name="" ID="{5EDB78A4-DBA6-4DEB-AAE9-A5A2516AFC48}" ShortID="324326112">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Touch" ID="{5EC8B32A-461E-4806-9908-5C4E5BD53A0E}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+									<ObjectRef Name="Player_Hit" ID="{5EC8B32A-461E-4806-9908-5C4E5BD53A0E}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
