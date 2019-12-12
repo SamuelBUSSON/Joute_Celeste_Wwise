@@ -37,6 +37,7 @@
 				<Event Id="638998366" Name="Play_Player_Heal" ObjectPath="\Events\Default Work Unit\Play_Player_Heal"/>
 				<Event Id="1864892471" Name="Play_Player_Hit" ObjectPath="\Events\Default Work Unit\Play_Player_Hit"/>
 				<Event Id="365655931" Name="Play_Player_Move_Solo" ObjectPath="\Events\Default Work Unit\Play_Player_Move_Solo"/>
+				<Event Id="1506832986" Name="Play_Titre_jap" ObjectPath="\Events\Default Work Unit\Play_Titre_jap"/>
 				<Event Id="2405542185" Name="Stop_Player_Move_Solo" ObjectPath="\Events\Default Work Unit\Stop_Player_Move_Solo"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -80,9 +81,17 @@
 					<ShortName>Player_Move-001.wav</ShortName>
 					<Path>SFX\Player_Move-001_D79FB2B7.wem</Path>
 				</File>
+				<File Id="439153988" Language="SFX">
+					<ShortName>Player_Hit1.wav</ShortName>
+					<Path>SFX\Player_Hit1_10C4C929.wem</Path>
+				</File>
 				<File Id="450593474" Language="SFX">
 					<ShortName>Player_Death.wav</ShortName>
 					<Path>SFX\Player_Death_10C4C929.wem</Path>
+				</File>
+				<File Id="528543202" Language="SFX">
+					<ShortName>Titre_Jap.wav</ShortName>
+					<Path>SFX\Titre_Jap_10C4C929.wem</Path>
 				</File>
 				<File Id="541052100" Language="SFX">
 					<ShortName>Etoile_Explosion.wav</ShortName>
@@ -91,6 +100,10 @@
 				<File Id="590515303" Language="SFX">
 					<ShortName>Aura1_Moins.wav</ShortName>
 					<Path>SFX\Aura1_Moins_10C4C929.wem</Path>
+				</File>
+				<File Id="779965436" Language="SFX">
+					<ShortName>Player_Hit3.wav</ShortName>
+					<Path>SFX\Player_Hit3_10C4C929.wem</Path>
 				</File>
 				<File Id="781961406" Language="SFX">
 					<ShortName>Aura1_Plus.wav</ShortName>
@@ -104,9 +117,17 @@
 					<ShortName>Player_Lancer_Etoile.wav</ShortName>
 					<Path>SFX\Player_Lancer_Etoile_10C4C929.wem</Path>
 				</File>
+				<File Id="925285197" Language="SFX">
+					<ShortName>Player_Hit4.wav</ShortName>
+					<Path>SFX\Player_Hit4_10C4C929.wem</Path>
+				</File>
 				<File Id="954387872" Language="SFX">
 					<ShortName>Planete_Explosion.wav</ShortName>
 					<Path>SFX\Planete_Explosion_10C4C929.wem</Path>
+				</File>
+				<File Id="1021363999" Language="SFX">
+					<ShortName>Player_Hit2.wav</ShortName>
+					<Path>SFX\Player_Hit2_10C4C929.wem</Path>
 				</File>
 				<File Id="1047473391" Language="SFX">
 					<ShortName>Player_Attrack.wav</ShortName>

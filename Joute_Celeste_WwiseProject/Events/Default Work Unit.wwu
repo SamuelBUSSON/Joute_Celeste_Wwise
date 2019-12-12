@@ -200,6 +200,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Titre_jap" ID="{8FF308BC-0C9C-4030-9171-C323D20410B9}">
+					<ChildrenList>
+						<Action Name="" ID="{D6106F47-2DA9-49F8-BDBA-4DB958548A8E}" ShortID="468615228">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Titre jap" ID="{46CA25EF-6A6F-4F28-B8A6-D6864D96B278}" WorkUnitID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
