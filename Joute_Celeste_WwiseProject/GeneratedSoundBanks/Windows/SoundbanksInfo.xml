@@ -52,6 +52,10 @@
 					<ShortName>Player_Dash2.wav</ShortName>
 					<Path>SFX\Player_Dash2_10C4C929.wem</Path>
 				</File>
+				<File Id="186373277" Language="SFX">
+					<ShortName>Move_Etoile.wav</ShortName>
+					<Path>SFX\Move_Etoile_10C4C929.wem</Path>
+				</File>
 				<File Id="215996882" Language="SFX">
 					<ShortName>Comete_Explosion.wav</ShortName>
 					<Path>SFX\Comete_Explosion_10C4C929.wem</Path>
@@ -63,6 +67,10 @@
 				<File Id="296645757" Language="SFX">
 					<ShortName>Player_Dash1.wav</ShortName>
 					<Path>SFX\Player_Dash1_10C4C929.wem</Path>
+				</File>
+				<File Id="310941075" Language="SFX">
+					<ShortName>Move_Planete.wav</ShortName>
+					<Path>SFX\Move_Planete_10C4C929.wem</Path>
 				</File>
 				<File Id="407296692" Language="SFX">
 					<ShortName>Player_Lancer.wav</ShortName>
@@ -87,6 +95,14 @@
 				<File Id="781961406" Language="SFX">
 					<ShortName>Aura1_Plus.wav</ShortName>
 					<Path>SFX\Aura1_Plus_10C4C929.wem</Path>
+				</File>
+				<File Id="893303029" Language="SFX">
+					<ShortName>Move_Comete.wav</ShortName>
+					<Path>SFX\Move_Comete_10C4C929.wem</Path>
+				</File>
+				<File Id="907377302" Language="SFX">
+					<ShortName>Player_Lancer_Etoile.wav</ShortName>
+					<Path>SFX\Player_Lancer_Etoile_10C4C929.wem</Path>
 				</File>
 				<File Id="954387872" Language="SFX">
 					<ShortName>Planete_Explosion.wav</ShortName>
