@@ -17,7 +17,7 @@
 						</Reference>
 					</ReferenceList>
 				</BlendContainer>
-				<BlendContainer Name="Astral" ID="{923DE07E-5605-4ECE-A267-7029C18D72A2}" ShortID="117015785">
+				<BlendContainer Name="Astral_Music_Menu" ID="{923DE07E-5605-4ECE-A267-7029C18D72A2}" ShortID="117015785">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -70,6 +70,9 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 						</Reference>
@@ -96,6 +99,2951 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<SwitchContainer Name="Palier_Voix" ID="{5D2045CA-6CE2-4E82-8C59-035371222108}" ShortID="858229599">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Etat1" ID="{D1FFE1EE-A2BD-4575-8D75-44355DB3ECE0}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Aura_Etat" ID="{F4AEEE10-D3A3-44E9-9FEF-B358AFFC3DCF}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Voix_Palier1" ID="{6574B0FD-C066-4504-8811-E94B5C3DD3DC}" ShortID="756124499">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Hit" ID="{84E6F775-3157-4616-A2DE-9022ED414C12}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+										<Effect Name="Fear_no_Evil (Custom)" ID="{3F194EF2-07AA-46EC-8A7A-9494EE02B5CE}" ShortID="557400092" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<PropertyList>
+												<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+												<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+												<Property Name="Voice2Enable" Type="bool" Value="True"/>
+												<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+												<Property Name="WetLevel" Type="Real32" Value="-7"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+										<Effect Name="Bass_(Custom)" ID="{A5A50650-2742-4F2D-B143-FA777ED43650}" ShortID="996887849" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+											<PropertyList>
+												<Property Name="DelayTime" Type="Real32" Value="10"/>
+												<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+												<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+												<Property Name="ModDepth" Type="Real32" Value="60"/>
+												<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+												<Property Name="ModPWM" Type="Real32" Value="0"/>
+												<Property Name="WetDryMix" Type="Real32" Value="19"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Hit_or_Lancer_or_Mort" ID="{88F07747-4438-43A7-8A12-EDDD23D49149}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Jap_Hit" ID="{AF7A3BEF-3304-4ABA-A009-F90573F1D089}" ShortID="341318216">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DE2567AA-1978-41F5-AD1D-77E2495FE1D2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Hit1" ID="{F861E28C-E83A-4B54-B249-DFEA130B98D9}" ShortID="299310072">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit1" ID="{E79E24C9-E1EF-433D-BB3E-025F4D7C3E74}" ShortID="21280493">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit1" ID="{E79E24C9-E1EF-433D-BB3E-025F4D7C3E74}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit2" ID="{3F5B41C9-06FC-45A6-AAB1-F24E164CEAA8}" ShortID="988393481">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit2" ID="{2A42C1DE-9BCC-4FF7-A976-A8F1BEA86790}" ShortID="508932766">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit2" ID="{2A42C1DE-9BCC-4FF7-A976-A8F1BEA86790}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit3" ID="{CBABE643-A728-4881-84D8-C446D54563C3}" ShortID="475421952">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit3" ID="{D54D9337-1175-45C2-B4F7-F656A3EBA23F}" ShortID="619439668">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit3" ID="{D54D9337-1175-45C2-B4F7-F656A3EBA23F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit4" ID="{E4B5CF51-90C5-40B2-9EE6-A5ACDC55E783}" ShortID="614662134">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit4" ID="{FF6D7062-8CE9-4046-93A4-9E1430751B0E}" ShortID="139688675">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit4" ID="{FF6D7062-8CE9-4046-93A4-9E1430751B0E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit5" ID="{7831E801-EB5F-40EA-95C6-0A76479E4CF0}" ShortID="176539771">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit5" ID="{34A0CCA5-4668-4562-B837-B46B77E4CD49}" ShortID="532462038">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit5" ID="{34A0CCA5-4668-4562-B837-B46B77E4CD49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit6" ID="{8C783E7E-7C87-4130-A299-39F42C0BA595}" ShortID="777093378">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit6" ID="{4E90CE8D-60A1-4A3F-BB71-6C6B96EFC825}" ShortID="644346688">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit6" ID="{4E90CE8D-60A1-4A3F-BB71-6C6B96EFC825}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit7" ID="{4FDEBC15-8A82-4B94-BEE1-7E0BF754A539}" ShortID="143788455">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit7" ID="{21E9DA89-ACD9-4700-95E5-FC81F2CC6BD9}" ShortID="964431662">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit7" ID="{21E9DA89-ACD9-4700-95E5-FC81F2CC6BD9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit8" ID="{6E5C105D-3036-402D-82FA-ED13BA99DDAE}" ShortID="609311544">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit8" ID="{DE41B427-A195-46BC-BD03-B6F652ED9704}" ShortID="450629560">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit8" ID="{DE41B427-A195-46BC-BD03-B6F652ED9704}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit9" ID="{5FB61225-85B5-488B-96B5-CA14737BF772}" ShortID="280944600">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit9" ID="{CB952CCA-1F5D-4F23-AD51-A5EA52CB0423}" ShortID="267217240">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit9.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit9" ID="{CB952CCA-1F5D-4F23-AD51-A5EA52CB0423}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit10" ID="{ECDDDA40-C990-454C-9194-8982B3C2E559}" ShortID="480850095">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit10" ID="{F2308D20-8C8B-4772-A4D8-7157C9116B07}" ShortID="449270184">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit10" ID="{F2308D20-8C8B-4772-A4D8-7157C9116B07}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit11" ID="{94F6FF8C-BED1-4E8C-B141-811497A5EB01}" ShortID="926493775">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit11" ID="{CE872479-3EEA-4DE0-858E-2BDAC3E4AB27}" ShortID="410560715">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit11.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit11" ID="{CE872479-3EEA-4DE0-858E-2BDAC3E4AB27}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{A3FFA6BE-E104-4829-A6FB-0E1426A04046}" ShortID="57091196">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{CD2AB588-6C0F-4F3C-85D7-0C9EE425F16C}" ShortID="451036763">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{CD2AB588-6C0F-4F3C-85D7-0C9EE425F16C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{429D599F-5558-41C7-A536-FAB761F6D89F}" ShortID="629606010">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{035C175D-C279-4345-89C1-F8D61AD7EFE1}" ShortID="413053254">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="821604535"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{035C175D-C279-4345-89C1-F8D61AD7EFE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{FD6AD647-077E-44AE-B4CF-24F6BAA8DAC6}" ShortID="1028622879">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{20134A8F-55D6-4DBF-8D88-45C480716798}" ShortID="729721238">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="490156219"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{20134A8F-55D6-4DBF-8D88-45C480716798}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{BF80498D-8739-47DA-B03F-7E5ECA018823}" ShortID="450638553">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{4C9914DB-70C4-449C-A42C-CB3DF73F62D5}" ShortID="922644769">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="826396855"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{4C9914DB-70C4-449C-A42C-CB3DF73F62D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Jap_Mort" ID="{441952F1-1F9D-4BB3-B5E9-E57D1EF63770}" ShortID="292348118">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{546F829F-545A-4F4E-9F18-3341B2765E3A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Mort0" ID="{3916E040-8B4C-4D88-BC57-A4D4D28FD81B}" ShortID="468731038">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort0" ID="{334EEB5F-8916-4B28-BDB6-0357BB05A41B}" ShortID="101559840">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort0" ID="{334EEB5F-8916-4B28-BDB6-0357BB05A41B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort1" ID="{8D0AFC6F-FE2A-4EC5-8AE2-66833440DCF8}" ShortID="1017029446">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort1" ID="{2E913F04-5CA6-412A-9D8B-06D71AECCD7B}" ShortID="949366711">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort1" ID="{2E913F04-5CA6-412A-9D8B-06D71AECCD7B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort2" ID="{43127DA2-5E5A-48D2-B528-A4A66DEE7538}" ShortID="198225264">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort2" ID="{F4D8A3C6-8EBF-4A1D-8C53-9BD3F48D92DC}" ShortID="752938758">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort2" ID="{F4D8A3C6-8EBF-4A1D-8C53-9BD3F48D92DC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort3" ID="{19D520F9-2B0A-42C7-BCD6-CCB843BB75CE}" ShortID="370117344">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort3" ID="{1BD07F2D-C11F-4D36-A35E-88644CA6C5D0}" ShortID="362527738">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort3" ID="{1BD07F2D-C11F-4D36-A35E-88644CA6C5D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort4" ID="{29DFCA0C-C14D-46B6-8E85-E76E34CBB4D8}" ShortID="782239723">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort4" ID="{32A8C3D0-B603-4B9C-8330-7DE207D9AC33}" ShortID="169701804">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort4" ID="{32A8C3D0-B603-4B9C-8330-7DE207D9AC33}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort5" ID="{B84E0BCB-2207-45D4-9633-693E6EE04B31}" ShortID="961505940">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort5" ID="{3B75E415-6A0D-47D6-91D9-EEEA79D7E747}" ShortID="509999347">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort5" ID="{3B75E415-6A0D-47D6-91D9-EEEA79D7E747}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort6" ID="{3165B1FB-60E0-4016-A1CF-AC762A092EE9}" ShortID="297965297">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort6" ID="{6A6FCADF-0BD3-469C-944C-D1AB0E996BB5}" ShortID="957862131">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort6" ID="{6A6FCADF-0BD3-469C-944C-D1AB0E996BB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort7" ID="{EA39F9CB-B212-4888-83FB-89F532055892}" ShortID="233314869">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort7" ID="{F901D5AC-BE50-4A9E-B58F-3FE6D724E886}" ShortID="482713344">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort7" ID="{F901D5AC-BE50-4A9E-B58F-3FE6D724E886}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort8" ID="{6FA9C7B1-C377-4671-A756-6DFD16C7FD71}" ShortID="452828207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort8" ID="{79E804F4-C022-4959-9835-994B8DE3F629}" ShortID="818465386">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort8" ID="{79E804F4-C022-4959-9835-994B8DE3F629}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort9" ID="{DE1FBAD5-C829-49B1-903C-C12A5068FA21}" ShortID="727457517">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort9" ID="{DAE0B7D9-20AA-4399-A531-70FC0690F567}" ShortID="773113783">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort9.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort9" ID="{DAE0B7D9-20AA-4399-A531-70FC0690F567}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{54913E35-7CF3-4833-9477-87DE2B07485C}" ShortID="703382181">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{1DC4795A-AA3B-468C-B600-727F3D36363F}" ShortID="557047352">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{1DC4795A-AA3B-468C-B600-727F3D36363F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{005DD871-6E7F-4E8F-A1F0-48D12D558DDB}" ShortID="87056178">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{D2380D0C-4464-4837-B974-7C296B0A9668}" ShortID="345314438">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="821604535"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{D2380D0C-4464-4837-B974-7C296B0A9668}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{2A1E8CD3-202C-42EC-8CC5-7A48761BCD2C}" ShortID="682390892">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{4BBB3D2E-774A-4112-8D5A-4495E758BB93}" ShortID="790617799">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="490156219"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{4BBB3D2E-774A-4112-8D5A-4495E758BB93}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{A3B67763-21C6-47EF-9320-880353131B22}" ShortID="830338895">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{06B723BE-0D17-4052-8693-DF7E82AFB41B}" ShortID="934169608">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="826396855"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{06B723BE-0D17-4052-8693-DF7E82AFB41B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Jap_Lancer" ID="{87475FDE-3649-4912-8830-9668D30748B0}" ShortID="69835366">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{88D7AB00-6FC7-40EB-8639-D1FE832198DF}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{394F3DB7-4C4A-418E-8D5F-C64ABE9552BE}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Lancer1" ID="{7F176101-F500-4F80-82B4-0E2F91D6738B}" ShortID="316653646">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer1" ID="{7A26F27F-9748-49FA-8975-D647353715C0}" ShortID="456571190">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer1" ID="{7A26F27F-9748-49FA-8975-D647353715C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer2" ID="{1A4BEBCB-A813-4B8F-BD5D-40B714D88C85}" ShortID="835482228">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer2" ID="{BCEC3D00-05C3-4126-B39D-DAFF760B4878}" ShortID="428058338">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer2" ID="{BCEC3D00-05C3-4126-B39D-DAFF760B4878}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer3" ID="{3429465B-ECF2-49E3-93FC-389A4EA45451}" ShortID="288267818">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer3" ID="{82044036-0B90-455E-8CA5-4C2A097EBB27}" ShortID="799112462">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer3" ID="{82044036-0B90-455E-8CA5-4C2A097EBB27}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer4" ID="{BC977A25-4378-4EB9-952C-447A3008BABF}" ShortID="261210267">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer4" ID="{FACB7178-5CF5-44B9-A1D0-B27FC91FE201}" ShortID="762058842">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer4" ID="{FACB7178-5CF5-44B9-A1D0-B27FC91FE201}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer7" ID="{31DD34F6-53BA-4681-917D-4457464A36F8}" ShortID="675472014">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer7" ID="{3E98F33C-B420-45E2-8D99-6BF748FCBD26}" ShortID="452713220">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer7" ID="{3E98F33C-B420-45E2-8D99-6BF748FCBD26}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{2CCDC5D6-BD36-481B-B1BB-0E8FF5E85415}" ShortID="197418165">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{ECA68AA1-8E9B-4ACC-8BDF-511EA5E7FDDC}" ShortID="121005179">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{ECA68AA1-8E9B-4ACC-8BDF-511EA5E7FDDC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{629C1D1E-98B9-4496-A5FD-BDDAE0666A12}" ShortID="792248099">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{E34FF4EF-21A1-4A18-B0F6-7421DAEC61DD}" ShortID="821604535">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{E34FF4EF-21A1-4A18-B0F6-7421DAEC61DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{8DA6E71E-D3C3-4848-866E-3D56ED613579}" ShortID="546303198">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{F7606D3A-2FED-4363-93EB-36F1EF7E3AC7}" ShortID="490156219">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{F7606D3A-2FED-4363-93EB-36F1EF7E3AC7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{28125C30-F0A5-427F-929B-033082A7749E}" ShortID="906206089">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{B9DF18B7-0A2B-4ECC-ABF7-0531E6D40C27}" ShortID="826396855">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{B9DF18B7-0A2B-4ECC-ABF7-0531E6D40C27}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer56" ID="{CB249B62-63F0-44DD-B5AA-D7239AE25D05}" ShortID="63386752">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer56" ID="{02019712-973D-4510-B231-88143D6A8DE6}" ShortID="328520904">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer56.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer56" ID="{02019712-973D-4510-B231-88143D6A8DE6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Lancer" ID="{87475FDE-3649-4912-8830-9668D30748B0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Hit" ID="{AF7A3BEF-3304-4ABA-A009-F90573F1D089}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Mort" ID="{441952F1-1F9D-4BB3-B5E9-E57D1EF63770}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Mort" ID="{3CCD254E-E595-4D29-8C70-673AB102671F}"/>
+										<ItemList>
+											<ItemRef Name="Jap_Mort" ID="{441952F1-1F9D-4BB3-B5E9-E57D1EF63770}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Hit" ID="{84E6F775-3157-4616-A2DE-9022ED414C12}"/>
+										<ItemList>
+											<ItemRef Name="Jap_Hit" ID="{AF7A3BEF-3304-4ABA-A009-F90573F1D089}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Lancer" ID="{C30A37A6-F31A-46B8-BF41-CA1AC19C25A4}"/>
+										<ItemList>
+											<ItemRef Name="Jap_Lancer" ID="{87475FDE-3649-4912-8830-9668D30748B0}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Voix_Palier2" ID="{93C4DF9D-EE60-47FA-A29E-593079BED6AE}" ShortID="332942544">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Hit" ID="{84E6F775-3157-4616-A2DE-9022ED414C12}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+										<Effect Name="Fear_no_Evil_(Custom)" ID="{CF35D7F1-7A27-474E-9F06-F6C988FB3971}" ShortID="636829597" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<PropertyList>
+												<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+												<Property Name="Voice2Enable" Type="bool" Value="True"/>
+												<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+												<Property Name="WetLevel" Type="Real32" Value="-5"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+										<Effect Name="Bass_(Custom)" ID="{D866E2F1-2F0E-4D7F-8B2A-EB57F529E8BE}" ShortID="297490175" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+											<PropertyList>
+												<Property Name="DelayTime" Type="Real32" Value="10"/>
+												<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+												<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+												<Property Name="ModDepth" Type="Real32" Value="60"/>
+												<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+												<Property Name="ModPWM" Type="Real32" Value="0"/>
+												<Property Name="WetDryMix" Type="Real32" Value="38"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Hit_or_Lancer_or_Mort" ID="{88F07747-4438-43A7-8A12-EDDD23D49149}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Jap_Mort" ID="{BD9A3617-042B-4CB1-BA73-D66885EC53E4}" ShortID="566775622">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Mort0" ID="{06238D86-2D9D-4B21-BBE8-BA681B01E960}" ShortID="321569130">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort0" ID="{EAFD8FEB-A316-411A-8772-8A7C1D03589C}" ShortID="681578074">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort0.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="101559840"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort0" ID="{EAFD8FEB-A316-411A-8772-8A7C1D03589C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort1" ID="{24C14356-C2FB-4042-926B-F2644052BBF4}" ShortID="622104988">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort1" ID="{A77A5779-D676-40FA-B4DF-CE91904F4846}" ShortID="622739838">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="949366711"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort1" ID="{A77A5779-D676-40FA-B4DF-CE91904F4846}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort2" ID="{99CEE3C0-D570-4F6B-90F7-1989CA605B94}" ShortID="792344049">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort2" ID="{553C4F54-6655-4AF8-B45E-F2216DE9B5F3}" ShortID="412554550">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="752938758"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort2" ID="{553C4F54-6655-4AF8-B45E-F2216DE9B5F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort3" ID="{89AF9A16-F4A8-4AF1-9394-B5A6B3127E71}" ShortID="64614050">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort3" ID="{E36992E5-EB82-4BCB-BCFB-BD82256DBA3C}" ShortID="459168952">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="362527738"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort3" ID="{E36992E5-EB82-4BCB-BCFB-BD82256DBA3C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort4" ID="{0CF2BCE1-93D9-4ECB-AF06-D91870BBF75B}" ShortID="820233697">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort4" ID="{1914F702-FFCE-4CF3-A24B-8673615C506D}" ShortID="247278613">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="169701804"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort4" ID="{1914F702-FFCE-4CF3-A24B-8673615C506D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort5" ID="{AC5C98F0-2718-46B8-94F3-60D897B5AFAD}" ShortID="53978057">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort5" ID="{36FD8BD7-2F29-4C69-AC66-3FD0AB1FB8B4}" ShortID="15229364">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort5.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="509999347"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort5" ID="{36FD8BD7-2F29-4C69-AC66-3FD0AB1FB8B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort6" ID="{B94BC4A3-24D2-4F6F-B842-D303FF5FB1B1}" ShortID="455261109">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort6" ID="{43968CB9-E700-40CF-9027-3195F24EB090}" ShortID="164659265">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort6.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="957862131"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort6" ID="{43968CB9-E700-40CF-9027-3195F24EB090}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort7" ID="{66AEF9A5-B215-4EC2-B99C-4303AF928B7C}" ShortID="887154974">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort7" ID="{95C02BD0-8872-48C9-B19E-D01CB25BEF99}" ShortID="986150977">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort7.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="482713344"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort7" ID="{95C02BD0-8872-48C9-B19E-D01CB25BEF99}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort8" ID="{822FF9FC-F112-49D4-A85A-50209728504B}" ShortID="165372849">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort8" ID="{D0EC215E-0A4B-4B74-886D-48FA00DE26C9}" ShortID="702272731">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort8.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="818465386"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort8" ID="{D0EC215E-0A4B-4B74-886D-48FA00DE26C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort9" ID="{DE9E3170-7BE6-4633-B37C-B6C2F0ABD588}" ShortID="401906556">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort9" ID="{BC2BBECA-2CE7-415D-A8FE-28939A0EF313}" ShortID="366033941">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort9.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="773113783"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort9" ID="{BC2BBECA-2CE7-415D-A8FE-28939A0EF313}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{8C2C3C9E-07E7-46FD-B95B-3D591BB3503E}" ShortID="684399777">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{FF4D329C-B284-438D-AFC8-6948F8A15128}" ShortID="767481567">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{FF4D329C-B284-438D-AFC8-6948F8A15128}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{3D637086-68B7-443C-BF7D-7EA5B9EC0C09}" ShortID="534138678">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{AB4AA526-924D-460E-8398-3C8CBED8DD49}" ShortID="805359241">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="821604535"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{AB4AA526-924D-460E-8398-3C8CBED8DD49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{44A81F8F-B3C8-42BF-9158-E18165A5A219}" ShortID="1070003293">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{000D9220-F1BF-462D-AB10-532F741DDEA4}" ShortID="1016098635">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="490156219"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{000D9220-F1BF-462D-AB10-532F741DDEA4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{5082FFCB-707B-46CC-98C2-1021BD968F6E}" ShortID="150281516">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{270E5272-285B-4DFC-8092-68248EDE320F}" ShortID="885729437">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="826396855"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{270E5272-285B-4DFC-8092-68248EDE320F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Jap_Hit" ID="{3CA1D8F2-055C-435F-A338-306A78ABCB30}" ShortID="825055630">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Hit1" ID="{D6676509-21C5-4A54-ABF5-81AEDDB93783}" ShortID="380161217">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit1" ID="{1CDF5FE1-B997-451A-9736-369B7D08D6B3}" ShortID="473633014">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="21280493"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit1" ID="{1CDF5FE1-B997-451A-9736-369B7D08D6B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit2" ID="{1A311179-C447-4276-9ABF-CB85FDED6941}" ShortID="740576442">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit2" ID="{F250647D-002F-4840-A084-5635D3B097FD}" ShortID="301141289">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="508932766"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit2" ID="{F250647D-002F-4840-A084-5635D3B097FD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit3" ID="{B2F3C08D-1B90-4B6E-88E2-D0D008FAC470}" ShortID="679445012">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit3" ID="{B225E2E0-CBB3-4EAC-801C-C893B69F0AD7}" ShortID="145915112">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="619439668"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit3" ID="{B225E2E0-CBB3-4EAC-801C-C893B69F0AD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit4" ID="{3C124482-990E-4125-92CB-81E904997297}" ShortID="79688895">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit4" ID="{5BEB3BA2-FDD1-46CC-90CD-C45978893EE7}" ShortID="269330709">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="139688675"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit4" ID="{5BEB3BA2-FDD1-46CC-90CD-C45978893EE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit5" ID="{8A10649F-60AA-4DA6-A30E-0C8B7DC2B3B4}" ShortID="213808919">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit5" ID="{5D6C5BF8-0BF8-44CC-8B3E-CF64ABC76884}" ShortID="996486778">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit5.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="532462038"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit5" ID="{5D6C5BF8-0BF8-44CC-8B3E-CF64ABC76884}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit6" ID="{4D33A2EB-CEC4-44F8-A3BC-78EC58B32660}" ShortID="216361737">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit6" ID="{84F172AD-6393-4802-B8BD-2B3D70958123}" ShortID="894516750">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit6.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="644346688"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit6" ID="{84F172AD-6393-4802-B8BD-2B3D70958123}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit7" ID="{5D78B7BF-434B-4649-AB2C-2EE0A2A96CA4}" ShortID="398637280">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit7" ID="{176EE5C6-2BF8-4119-95F3-2CFCFC4A0424}" ShortID="208488141">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit7.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="964431662"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit7" ID="{176EE5C6-2BF8-4119-95F3-2CFCFC4A0424}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit8" ID="{9C6D7A48-E277-47F3-AD9E-61428BE52FFF}" ShortID="656505299">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit8" ID="{8DBBEDC1-FED6-4BD2-BA68-613297368295}" ShortID="236064136">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit8.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="450629560"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit8" ID="{8DBBEDC1-FED6-4BD2-BA68-613297368295}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit9" ID="{F14646D4-BA09-486B-AC09-088CB4DF526E}" ShortID="1025511456">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit9" ID="{073A263E-8CA5-4CDD-89CA-7421D4C93B76}" ShortID="419130934">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit9.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="267217240"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit9" ID="{073A263E-8CA5-4CDD-89CA-7421D4C93B76}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit10" ID="{E3B24E8F-B720-4F8A-A908-20BB41355DA2}" ShortID="602879940">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit10" ID="{45F017E3-0DF1-402C-AB82-795D79DD1597}" ShortID="997606876">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit10.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="449270184"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit10" ID="{45F017E3-0DF1-402C-AB82-795D79DD1597}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit11" ID="{39CD31E2-57E1-48C5-95BD-7BF6BFC66E5C}" ShortID="593155447">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit11" ID="{66D1B2F9-CE2E-432B-BD18-451485A11114}" ShortID="71329719">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit11.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="410560715"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit11" ID="{66D1B2F9-CE2E-432B-BD18-451485A11114}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{8376C7A1-3F28-419B-848A-D9A6EE4494F2}" ShortID="1015902118">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{2A269649-C22E-4679-B0E6-722476F721D8}" ShortID="260105680">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{2A269649-C22E-4679-B0E6-722476F721D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{CA2CBD5E-CBFB-4ECD-9084-3ED7912348F2}" ShortID="973539005">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{0957C73F-8D25-41C6-9CB5-8BDF3C6ED288}" ShortID="608056305">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="821604535"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{0957C73F-8D25-41C6-9CB5-8BDF3C6ED288}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{F25C02CE-60E6-4588-BF11-431A638C877A}" ShortID="91058097">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{E332331E-8437-4FAD-AC06-D223AB0A3C22}" ShortID="496274073">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="490156219"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{E332331E-8437-4FAD-AC06-D223AB0A3C22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{74955407-AACB-400B-9DFD-0CA21DCE1287}" ShortID="107917957">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{6EFC090B-42E8-405E-A471-2AB7E7785EFD}" ShortID="130876619">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="826396855"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{6EFC090B-42E8-405E-A471-2AB7E7785EFD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Jap_Lancer" ID="{39DD6FC1-C99B-420B-BDDE-0DF0341BA959}" ShortID="620088876">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Lancer1" ID="{CD1F81F9-7ED9-440B-B52B-9ECDCA1A05BF}" ShortID="977117418">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer1" ID="{8BC6B4AE-0BA5-43E9-A8FA-33E979FDAC08}" ShortID="826680462">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="456571190"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer1" ID="{8BC6B4AE-0BA5-43E9-A8FA-33E979FDAC08}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer2" ID="{FFC35107-24A4-4D8B-8046-952D4B09A10F}" ShortID="76252261">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer2" ID="{EDA4C986-EACC-4B3B-B86E-9EC68D3B8195}" ShortID="663820913">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="428058338"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer2" ID="{EDA4C986-EACC-4B3B-B86E-9EC68D3B8195}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer3" ID="{1B0D838C-8C98-43FA-849C-0F1F19EF3950}" ShortID="727763985">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer3" ID="{644D6411-E512-4058-BDDB-BBE36E4F4DBF}" ShortID="809949608">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="799112462"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer3" ID="{644D6411-E512-4058-BDDB-BBE36E4F4DBF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer4" ID="{EAE7AB64-8CBF-498E-9A68-CF0332F54BE0}" ShortID="958806696">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer4" ID="{916956DF-3A17-483A-8C3B-3890029A175F}" ShortID="679634370">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="762058842"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer4" ID="{916956DF-3A17-483A-8C3B-3890029A175F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer7" ID="{0457AA9A-E808-4047-87A9-A75442DB1260}" ShortID="256929555">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer7" ID="{EF89C773-A2DB-4C47-857C-23FB6A97CF95}" ShortID="384844705">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer7.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="452713220"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer7" ID="{EF89C773-A2DB-4C47-857C-23FB6A97CF95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{ED9B0E8C-6F32-4599-B964-E99E4A782B25}" ShortID="99550042">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{1F30729E-CE02-4CC3-880C-C73A49D97FD5}" ShortID="202928004">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{1F30729E-CE02-4CC3-880C-C73A49D97FD5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{B1F01B06-511F-4396-911B-3865A4493307}" ShortID="192798060">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{0AECC8CC-2E5A-4668-AEA7-BF8A20606F5A}" ShortID="118959793">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="821604535"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{0AECC8CC-2E5A-4668-AEA7-BF8A20606F5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{9B98024A-C424-44CB-8611-C3AE5A3994DE}" ShortID="868342455">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{EB4FA3DC-407F-409D-BBD3-CC26270DC52A}" ShortID="1003846111">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="490156219"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{EB4FA3DC-407F-409D-BBD3-CC26270DC52A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{BDBEDE8F-A24D-4D3A-8AF6-5CF8D46D140D}" ShortID="540099713">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{F5051A69-DC64-4922-AD21-296AD5F4F370}" ShortID="543932179">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="826396855"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{F5051A69-DC64-4922-AD21-296AD5F4F370}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer56" ID="{04625EAA-3FA8-4840-8100-8F54E09E9E27}" ShortID="784220868">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer56" ID="{EE36B613-7362-440D-BBD4-B119041C40DF}" ShortID="971382398">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer56.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="328520904"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer56" ID="{EE36B613-7362-440D-BBD4-B119041C40DF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Mort" ID="{BD9A3617-042B-4CB1-BA73-D66885EC53E4}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Lancer" ID="{39DD6FC1-C99B-420B-BDDE-0DF0341BA959}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Hit" ID="{3CA1D8F2-055C-435F-A338-306A78ABCB30}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Mort" ID="{3CCD254E-E595-4D29-8C70-673AB102671F}"/>
+										<ItemList>
+											<ItemRef Name="Jap_Mort" ID="{BD9A3617-042B-4CB1-BA73-D66885EC53E4}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Hit" ID="{84E6F775-3157-4616-A2DE-9022ED414C12}"/>
+										<ItemList>
+											<ItemRef Name="Jap_Hit" ID="{3CA1D8F2-055C-435F-A338-306A78ABCB30}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Voix_Palier3" ID="{2BAD70BF-A3FE-48EA-AE5A-C561AE9F2CC5}" ShortID="88753487">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+										<Effect Name="Fear_no_Evil_(Custom)" ID="{DD4AF3F4-6B7D-4FD3-A6A1-2DCCFF38E63A}" ShortID="578955888" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<PropertyList>
+												<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+												<Property Name="Voice2Enable" Type="bool" Value="True"/>
+												<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Bass" ID="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Hit_or_Lancer_or_Mort" ID="{88F07747-4438-43A7-8A12-EDDD23D49149}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Jap_Mort" ID="{30216636-277C-474E-9D0A-1AFF5122BDE1}" ShortID="163382168">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Mort0" ID="{563C3D20-07FD-412C-BFE8-1DC59140D355}" ShortID="342521846">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort0" ID="{8ABF83E0-C2C7-4E92-9DB9-1B413ECA0661}" ShortID="694947587">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort0.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="101559840"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort0" ID="{8ABF83E0-C2C7-4E92-9DB9-1B413ECA0661}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort1" ID="{F8384937-E274-4599-AE36-780F58E8D974}" ShortID="929438118">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort1" ID="{A855E03C-8221-4683-A721-B4733F4AF5F4}" ShortID="853203094">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="949366711"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort1" ID="{A855E03C-8221-4683-A721-B4733F4AF5F4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort2" ID="{10F31B85-4A2B-46C9-A6BA-71C3EE33E43B}" ShortID="476945658">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort2" ID="{5891CB0B-9C5A-4E82-A068-59505AED4BAF}" ShortID="622551310">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="752938758"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort2" ID="{5891CB0B-9C5A-4E82-A068-59505AED4BAF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort3" ID="{2364ABAE-525F-4247-8EE4-877C8EF12518}" ShortID="501109502">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort3" ID="{8CBF78C8-C25B-456F-8D8C-9050EAA0B712}" ShortID="754508575">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="362527738"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort3" ID="{8CBF78C8-C25B-456F-8D8C-9050EAA0B712}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort4" ID="{2197EB49-4C45-4BCC-96AF-774DEEE3DA33}" ShortID="1009262423">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort4" ID="{CFD7C15D-AB74-4ECA-8025-2934DF5996B3}" ShortID="935264802">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="169701804"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort4" ID="{CFD7C15D-AB74-4ECA-8025-2934DF5996B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort5" ID="{2895B156-0997-427F-AB32-1E7336E67333}" ShortID="139079940">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort5" ID="{1DAB812B-7FFD-4A13-AA82-42D83DB07FD3}" ShortID="248610968">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort5.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="509999347"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort5" ID="{1DAB812B-7FFD-4A13-AA82-42D83DB07FD3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort6" ID="{70800EE2-F780-4483-961A-227430396384}" ShortID="509924851">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort6" ID="{73460CEA-6BDD-458E-8B97-B22615DACCEF}" ShortID="682418383">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort6.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="957862131"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort6" ID="{73460CEA-6BDD-458E-8B97-B22615DACCEF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort7" ID="{3CCA073F-229D-42AD-ACE1-E980680A1CEE}" ShortID="26012898">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort7" ID="{29C2959A-32A6-4AB5-A415-6EEB44391195}" ShortID="40196379">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort7.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="482713344"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort7" ID="{29C2959A-32A6-4AB5-A415-6EEB44391195}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort8" ID="{6DF1FCC9-65BD-4B45-961E-2A2ACF77C84D}" ShortID="249171679">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort8" ID="{BCBFBE72-86AA-4B74-B485-7BD4C1ED8D1F}" ShortID="1023815524">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort8.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="818465386"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort8" ID="{BCBFBE72-86AA-4B74-B485-7BD4C1ED8D1F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Mort9" ID="{AFD8CD56-F07C-4DCC-96EE-390123DD4D2F}" ShortID="350208974">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Mort9" ID="{F758FB1B-9C05-4C8B-B394-FDA1AD83BB9F}" ShortID="881572009">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Mort9.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="773113783"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Mort9" ID="{F758FB1B-9C05-4C8B-B394-FDA1AD83BB9F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{5E37C519-7E81-4AAF-9556-7B35D1048CD2}" ShortID="534113012">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{E916A5A7-4FD2-478B-97EC-A5A1A8E829F1}" ShortID="1043437840">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{E916A5A7-4FD2-478B-97EC-A5A1A8E829F1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{891C6AFE-54A6-48D5-B16D-30BBFFD56041}" ShortID="462222371">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{59DF68BF-B84E-4C12-BDEC-1175DD03818F}" ShortID="303722490">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="821604535"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{59DF68BF-B84E-4C12-BDEC-1175DD03818F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{E08139B7-5CE0-444B-A071-F1A7F6AF25F4}" ShortID="977334783">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{5B8298FB-F64E-491D-8B05-3C76AB820E30}" ShortID="887946603">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="490156219"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{5B8298FB-F64E-491D-8B05-3C76AB820E30}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{B3110F9B-F2C9-4484-9449-D14F39FEE0ED}" ShortID="78399088">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{AEB6C029-7F0B-4B48-9464-E2F51C91829A}" ShortID="845947973">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="826396855"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{AEB6C029-7F0B-4B48-9464-E2F51C91829A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Jap_Hit" ID="{1ECB9B43-8D6B-4F23-904C-B2B046A4228A}" ShortID="666602477">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Hit1" ID="{E20E7AF3-F486-4BD5-A51B-36C09ACD05D8}" ShortID="116978994">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit1" ID="{232B04A9-47BE-4D50-9412-3FA95160EB08}" ShortID="60931467">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="21280493"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit1" ID="{232B04A9-47BE-4D50-9412-3FA95160EB08}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit2" ID="{E344723B-8E9F-4F6B-9B51-260FC7FB91BE}" ShortID="658544885">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit2" ID="{E36D18AB-6AC7-40E0-BFAC-E911CD83967B}" ShortID="484458243">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="508932766"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit2" ID="{E36D18AB-6AC7-40E0-BFAC-E911CD83967B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit3" ID="{1108AC9A-6D2C-4CEA-BE2B-E06A7A7BD199}" ShortID="320520574">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit3" ID="{D6FAE83C-CF95-4CA0-810F-C4AAE4EC2CFE}" ShortID="511604169">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="619439668"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit3" ID="{D6FAE83C-CF95-4CA0-810F-C4AAE4EC2CFE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit4" ID="{549BA279-2B64-43FB-8117-43FE841D315A}" ShortID="1037120064">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit4" ID="{7F74A48D-6C06-41E9-B454-CF4263F41A35}" ShortID="407265235">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="139688675"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit4" ID="{7F74A48D-6C06-41E9-B454-CF4263F41A35}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit5" ID="{A9BBB12C-5999-4A7F-8173-88EBB6A2C37E}" ShortID="1000728685">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit5" ID="{55EFE94E-8217-44B0-87FC-7D4B8897DA5B}" ShortID="469549136">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit5.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="532462038"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit5" ID="{55EFE94E-8217-44B0-87FC-7D4B8897DA5B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit6" ID="{8E43FDC8-5CB4-4139-926B-A0356AEDF772}" ShortID="815213157">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit6" ID="{476F45B7-D2A2-4571-8B26-47DAB3421F7C}" ShortID="56683312">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit6.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="644346688"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit6" ID="{476F45B7-D2A2-4571-8B26-47DAB3421F7C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit7" ID="{B59345B1-37CF-4A7E-9EA1-36CB19E70427}" ShortID="330207493">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit7" ID="{BF5D7EFA-B3F6-4C42-B918-29032D5637DF}" ShortID="233992932">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit7.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="964431662"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit7" ID="{BF5D7EFA-B3F6-4C42-B918-29032D5637DF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit8" ID="{4481338C-E48C-4153-A7B4-00B2C3CA85C4}" ShortID="248189201">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit8" ID="{35C52597-92BF-49BB-BB11-5EC5E6DE5D88}" ShortID="877242241">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit8.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="450629560"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit8" ID="{35C52597-92BF-49BB-BB11-5EC5E6DE5D88}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit9" ID="{D21EA0FE-CBB2-48DA-B163-75B7C6F87B1C}" ShortID="407442272">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit9" ID="{D1B3FCAB-E28A-4213-801A-FD2B58E71963}" ShortID="19210350">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit9.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="267217240"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit9" ID="{D1B3FCAB-E28A-4213-801A-FD2B58E71963}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit10" ID="{22A4CF9C-2DBE-48BB-863D-8BA4D87B2913}" ShortID="333682978">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit10" ID="{45C18583-694F-4B4C-BFDF-C5E11F0906B6}" ShortID="715067725">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit10.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="449270184"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit10" ID="{45C18583-694F-4B4C-BFDF-C5E11F0906B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Hit11" ID="{4498DA2B-00A7-4276-B68A-7448B0D55F6C}" ShortID="903731621">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Hit11" ID="{448F3C51-50B4-42EC-B147-2592EA6387E1}" ShortID="529516603">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Hit11.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="410560715"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Hit11" ID="{448F3C51-50B4-42EC-B147-2592EA6387E1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{34E32492-9312-4228-92C4-04450B43D908}" ShortID="164911270">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{3E761AAB-5461-4302-ACDD-43AC1AD825E0}" ShortID="213776914">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{3E761AAB-5461-4302-ACDD-43AC1AD825E0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{92DD8D9C-28D9-460C-A1FF-C21B77F15474}" ShortID="1006752144">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{4D717230-13EC-47DC-A13E-8D7917E09247}" ShortID="779708199">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="821604535"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{4D717230-13EC-47DC-A13E-8D7917E09247}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{B87360A9-0ED5-4BD2-A2F0-37A8B560FC9D}" ShortID="659945643">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{C8F2287D-393E-43C9-858C-DA5B1D85EC6F}" ShortID="198610089">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="490156219"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{C8F2287D-393E-43C9-858C-DA5B1D85EC6F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{082F77C2-7AE0-414C-A9BD-77879AA2B94B}" ShortID="29015970">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{8C78E42E-536F-4759-96E4-FE743C46D731}" ShortID="168862219">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="826396855"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{8C78E42E-536F-4759-96E4-FE743C46D731}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Jap_Lancer" ID="{779E12C7-5A97-4B72-995D-372608EC8C30}" ShortID="995737638">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jap_Lancer1" ID="{43069EA9-03F0-4F24-AD24-F73663E78A83}" ShortID="736498457">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer1" ID="{BAB51B5B-8965-48F3-94F4-00B6F0A65248}" ShortID="393513249">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="456571190"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer1" ID="{BAB51B5B-8965-48F3-94F4-00B6F0A65248}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer2" ID="{1FD405E5-9DE9-48E2-881B-4D89E8841154}" ShortID="278706249">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer2" ID="{5BD377E3-6CCA-4EE0-A3A5-CEB88C3EA44A}" ShortID="522913474">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="428058338"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer2" ID="{5BD377E3-6CCA-4EE0-A3A5-CEB88C3EA44A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer3" ID="{64325186-8282-4DDB-BC5A-522EA20C4F60}" ShortID="182358601">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer3" ID="{7FFF4492-6D9D-4EC5-ADC0-D7FA9B289005}" ShortID="725266694">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="799112462"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer3" ID="{7FFF4492-6D9D-4EC5-ADC0-D7FA9B289005}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer4" ID="{8A096CF3-3860-45C7-AB59-9B077C72DE0C}" ShortID="3477210">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer4" ID="{D57D8C4A-EB04-4B57-9F1A-AC28F043EF24}" ShortID="741467317">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="762058842"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer4" ID="{D57D8C4A-EB04-4B57-9F1A-AC28F043EF24}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer7" ID="{C3B9FFCB-C8B5-4783-B196-59C4DC3CB585}" ShortID="548764932">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer7" ID="{5FF16C75-2B39-4120-8729-60533103E45A}" ShortID="571894107">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer7.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="452713220"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer7" ID="{5FF16C75-2B39-4120-8729-60533103E45A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1" ID="{B67BF2F6-5705-4411-A612-B2755F289878}" ShortID="796720081">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{0A074CB3-E040-4CB8-BA47-6868D13ADAAD}" ShortID="900639551">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{0A074CB3-E040-4CB8-BA47-6868D13ADAAD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide2" ID="{3EFC6601-78AB-4211-8A89-0CA7BD1943F3}" ShortID="674727031">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide2" ID="{B777CB96-525A-4701-A839-891DF9B15726}" ShortID="793034600">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="821604535"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide2" ID="{B777CB96-525A-4701-A839-891DF9B15726}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide3" ID="{57509FB3-6372-4D0A-A625-DC97F931B62D}" ShortID="787368960">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide3" ID="{F9C91816-7BB9-4349-A751-7798A19DD507}" ShortID="423698136">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="490156219"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide3" ID="{F9C91816-7BB9-4349-A751-7798A19DD507}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide4" ID="{D3D7ED89-7166-434A-9874-6E288D51D4D5}" ShortID="384992540">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide4" ID="{BDAF3028-02F0-4A45-8DAD-E28FE574DA1D}" ShortID="35619299">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="826396855"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide4" ID="{BDAF3028-02F0-4A45-8DAD-E28FE574DA1D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jap_Lancer56" ID="{6ECDE4E2-A99E-45F7-B48A-0D187CFA59AA}" ShortID="493462739">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jap_Lancer56" ID="{BD46E4D0-198C-4F3E-B073-F8C20ED89699}" ShortID="555961901">
+													<Language>SFX</Language>
+													<AudioFile>Jap_Lancer56.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="328520904"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jap_Lancer56" ID="{BD46E4D0-198C-4F3E-B073-F8C20ED89699}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Mort" ID="{30216636-277C-474E-9D0A-1AFF5122BDE1}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Hit" ID="{1ECB9B43-8D6B-4F23-904C-B2B046A4228A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Jap_Lancer" ID="{779E12C7-5A97-4B72-995D-372608EC8C30}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Mort" ID="{3CCD254E-E595-4D29-8C70-673AB102671F}"/>
+										<ItemList>
+											<ItemRef Name="Jap_Mort" ID="{30216636-277C-474E-9D0A-1AFF5122BDE1}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Hit" ID="{84E6F775-3157-4616-A2DE-9022ED414C12}"/>
+										<ItemList>
+											<ItemRef Name="Jap_Hit" ID="{1ECB9B43-8D6B-4F23-904C-B2B046A4228A}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Voix_Palier2" ID="{93C4DF9D-EE60-47FA-A29E-593079BED6AE}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Voix_Palier3" ID="{2BAD70BF-A3FE-48EA-AE5A-C561AE9F2CC5}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Voix_Palier1" ID="{6574B0FD-C066-4504-8811-E94B5C3DD3DC}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Etat3" ID="{6B4EA11D-E38F-4F77-AA26-38DDC95A4621}"/>
+								<ItemList>
+									<ItemRef Name="Voix_Palier3" ID="{2BAD70BF-A3FE-48EA-AE5A-C561AE9F2CC5}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Etat2" ID="{683E87D2-35FC-4C54-BFE0-00C68FE3094F}"/>
+								<ItemList>
+									<ItemRef Name="Voix_Palier2" ID="{93C4DF9D-EE60-47FA-A29E-593079BED6AE}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Etat1" ID="{D1FFE1EE-A2BD-4575-8D75-44355DB3ECE0}"/>
+								<ItemList>
+									<ItemRef Name="Voix_Palier1" ID="{6574B0FD-C066-4504-8811-E94B5C3DD3DC}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

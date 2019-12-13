@@ -36,6 +36,20 @@
 						</Switch>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Aura_Etat" ID="{F4AEEE10-D3A3-44E9-9FEF-B358AFFC3DCF}">
+					<ChildrenList>
+						<Switch Name="Etat1" ID="{D1FFE1EE-A2BD-4575-8D75-44355DB3ECE0}"/>
+						<Switch Name="Etat2" ID="{683E87D2-35FC-4C54-BFE0-00C68FE3094F}"/>
+						<Switch Name="Etat3" ID="{6B4EA11D-E38F-4F77-AA26-38DDC95A4621}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Hit_or_Lancer_or_Mort" ID="{88F07747-4438-43A7-8A12-EDDD23D49149}">
+					<ChildrenList>
+						<Switch Name="Hit" ID="{84E6F775-3157-4616-A2DE-9022ED414C12}"/>
+						<Switch Name="Lancer" ID="{C30A37A6-F31A-46B8-BF41-CA1AC19C25A4}"/>
+						<Switch Name="Mort" ID="{3CCD254E-E595-4D29-8C70-673AB102671F}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -244,6 +244,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Trou_Noir" ID="{F5AF2463-53DB-4C97-808E-3B15D6581B4E}">
+					<ChildrenList>
+						<Action Name="" ID="{E0AD9DB8-0635-4E39-A079-6700E27F8BB7}" ShortID="109771538">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Trou_Noir" ID="{6A732911-FF0B-4DE9-A801-A25E43A9AF67}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Palier_Voix" ID="{D2A0B700-B754-43DD-9995-444272090788}">
+					<ChildrenList>
+						<Action Name="" ID="{E5D95F5D-E3ED-4CF7-B989-71626FD19379}" ShortID="821785019">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Palier_Voix" ID="{5D2045CA-6CE2-4E82-8C59-035371222108}" WorkUnitID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

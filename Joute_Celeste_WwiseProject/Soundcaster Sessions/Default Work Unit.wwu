@@ -23,6 +23,8 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Aura1" ID="{54858DD2-6F72-493E-88D7-E685250B838F}"/>
+						<CurrentSwitchRef Name="Hit" ID="{84E6F775-3157-4616-A2DE-9022ED414C12}"/>
+						<CurrentSwitchRef Name="Etat1" ID="{D1FFE1EE-A2BD-4575-8D75-44355DB3ECE0}"/>
 						<CurrentSwitchRef Name="Comete" ID="{C718E665-380A-44C3-AEFC-E31D42916A80}"/>
 						<CurrentSwitchRef Name="State1to2" ID="{0CACD83F-D98D-488A-B74C-B5B3C045BD36}"/>
 						<CurrentSwitchRef Name="Down" ID="{AE9D03D0-8236-4C3F-84F8-B586231304AF}"/>
