@@ -191,8 +191,6 @@
 						<Action Name="" ID="{ED031300-1292-4E1E-A37A-78B60BFB6A03}" ShortID="257431234">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Delay" Type="Real64" Value="0.5"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -208,17 +206,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Titre jap" ID="{46CA25EF-6A6F-4F28-B8A6-D6864D96B278}" WorkUnitID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Player_Charge_Loop" ID="{68B02F77-F779-461A-B008-18FE5ABA548E}">
-					<ChildrenList>
-						<Action Name="" ID="{7A8C0A37-E585-42D0-9066-1196F83441C0}" ShortID="958977958">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Charge_Loop" ID="{9D94F3F7-F2D0-4B52-9C7C-22C57925AE93}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

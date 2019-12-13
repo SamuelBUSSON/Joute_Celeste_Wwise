@@ -18,7 +18,7 @@
 									<ObjectRef Name="Comete" ID="{C718E665-380A-44C3-AEFC-E31D42916A80}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Choix_Astres" ID="{15BF6CA9-5DEF-4530-9CFF-9C637D637BDE}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
@@ -103,7 +103,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -129,12 +129,19 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Move_Comete" ID="{95210E65-9438-472C-BEA7-0113D9581414}" ShortID="504965090">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -172,7 +179,7 @@
 									<ObjectRef Name="Comete" ID="{C718E665-380A-44C3-AEFC-E31D42916A80}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Choix_Astres" ID="{15BF6CA9-5DEF-4530-9CFF-9C637D637BDE}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
@@ -248,7 +255,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -257,7 +264,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -283,12 +290,19 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Move_Etoile" ID="{738870A2-49D7-4D74-BDC4-43D44D509A08}" ShortID="594198413">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -330,7 +344,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -364,7 +378,7 @@
 									<ObjectRef Name="Comete" ID="{C718E665-380A-44C3-AEFC-E31D42916A80}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Choix_Astres" ID="{15BF6CA9-5DEF-4530-9CFF-9C637D637BDE}" WorkUnitID="{18B8A12E-45B0-4241-86D7-285A8B7539C2}"/>
@@ -437,12 +451,19 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<RandomSequenceContainer Name="Move_Planete" ID="{378E3B3B-A521-472B-94F9-D4FB11B618DF}" ShortID="1010555107">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+									<ObjectRef Name="Mix_Object" ID="{BE405D1F-EA4B-4157-A97D-B9900436629C}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

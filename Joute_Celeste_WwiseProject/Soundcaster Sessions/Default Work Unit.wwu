@@ -9,6 +9,10 @@
 							<ObjectRef Name="Player_Fire" ID="{9DF15B2F-5138-4B87-A7E1-42221358B0A7}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Player_Move_Solo" ID="{90015F2F-BE87-4313-9067-DE1A9E3D505D}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
+							<Position X="1" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
