@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>E:\Users\user\Desktop\MASTER ENJMIN\NanoProjet\GIT\Joute_Celeste_Wwise\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>E:\Users\user\Desktop\MASTER ENJMIN\NanoProjet\GIT\Joute_Celeste_Wwise\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\Users\user\Desktop\MASTER ENJMIN\NanoProjet\GIT\Joute_Celeste_Wwise\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\Users\user\Desktop\MASTER ENJMIN\NanoProjet\GIT\Joute_Celeste_Wwise\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -28,6 +28,9 @@
 				<Event Id="1037682143" Name="Play_Explosion_Comete" ObjectPath="\Events\Default Work Unit\Play_Explosion_Comete"/>
 				<Event Id="4292554548" Name="Play_Explosion_Etoile" ObjectPath="\Events\Default Work Unit\Play_Explosion_Etoile"/>
 				<Event Id="1818497125" Name="Play_Explosion_Planete" ObjectPath="\Events\Default Work Unit\Play_Explosion_Planete"/>
+				<Event Id="2567610373" Name="Play_Move_Comete" ObjectPath="\Events\Default Work Unit\Play_Move_Comete"/>
+				<Event Id="1212569294" Name="Play_Move_Etoile" ObjectPath="\Events\Default Work Unit\Play_Move_Etoile"/>
+				<Event Id="3689541843" Name="Play_Move_Planete" ObjectPath="\Events\Default Work Unit\Play_Move_Planete"/>
 				<Event Id="319966612" Name="Play_Player_Attrack" ObjectPath="\Events\Default Work Unit\Play_Player_Attrack"/>
 				<Event Id="2363478948" Name="Play_Player_Charge" ObjectPath="\Events\Default Work Unit\Play_Player_Charge"/>
 				<Event Id="2175711460" Name="Play_Player_Dash" ObjectPath="\Events\Default Work Unit\Play_Player_Dash"/>

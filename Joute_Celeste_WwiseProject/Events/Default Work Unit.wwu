@@ -211,6 +211,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Move_Comete" ID="{1BB87ECE-5C6A-438D-97C6-BFB1E0262BA1}">
+					<ChildrenList>
+						<Action Name="" ID="{1EC75247-281E-44A2-AE47-4D24231C93BF}" ShortID="427503614">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Move_Comete" ID="{95210E65-9438-472C-BEA7-0113D9581414}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Move_Etoile" ID="{5B333BAB-AE7C-4DB9-ADF0-115EB703A5F6}">
+					<ChildrenList>
+						<Action Name="" ID="{4DED507E-F695-40C9-A02D-6D2B7C3AD3E9}" ShortID="663023447">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Move_Etoile" ID="{738870A2-49D7-4D74-BDC4-43D44D509A08}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Move_Planete" ID="{34320DCA-E576-4D58-AE52-1584CC58B178}">
+					<ChildrenList>
+						<Action Name="" ID="{FD11BB77-C97B-4D9A-BE57-82DDDBF86C5B}" ShortID="755501919">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Move_Planete" ID="{378E3B3B-A521-472B-94F9-D4FB11B618DF}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
