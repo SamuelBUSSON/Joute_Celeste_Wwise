@@ -21,6 +21,7 @@
 			<ShortName>Son_General</ShortName>
 			<Path>Son_General.bnk</Path>
 			<IncludedEvents>
+				<Event Id="541273363" Name="Play_Astral_Music_Menu" ObjectPath="\Events\Default Work Unit\Play_Astral_Music_Menu"/>
 				<Event Id="586774143" Name="Play_Aura1_or_2" ObjectPath="\Events\Default Work Unit\Play_Aura1_or_2"/>
 				<Event Id="1722544548" Name="Play_Contact_for_Comete" ObjectPath="\Events\Default Work Unit\Play_Contact_for_Comete"/>
 				<Event Id="3099463575" Name="Play_Contact_for_Etoile" ObjectPath="\Events\Default Work Unit\Play_Contact_for_Etoile"/>

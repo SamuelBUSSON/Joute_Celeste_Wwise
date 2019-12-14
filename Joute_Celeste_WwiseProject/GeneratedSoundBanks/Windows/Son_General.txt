@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	168627934	Play_Player_Dash2			\Default Work Unit\Play_Player_Dash2	
 	319966612	Play_Player_Attrack			\Default Work Unit\Play_Player_Attrack	
 	365655931	Play_Player_Move_Solo			\Default Work Unit\Play_Player_Move_Solo	
+	541273363	Play_Astral_Music_Menu			\Default Work Unit\Play_Astral_Music_Menu	
 	586774143	Play_Aura1_or_2			\Default Work Unit\Play_Aura1_or_2	
 	638998366	Play_Player_Heal			\Default Work Unit\Play_Player_Heal	
 	1037682143	Play_Explosion_Comete			\Default Work Unit\Play_Explosion_Comete	Play l'explosion si une comète explose
@@ -389,7 +390,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	77861024	Player_Attrack-001	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Attrack-001_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Attrack\Player_Attrack-001		96064
 	84714200	Aura2_Plus	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Aura2_Plus_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Aura\Aura1 or 2\Aura2_State\State1to2\Aura2_Plus		151272
 	86387383	Player_Dash2	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Player_Dash2_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Player_Dash2\Player_Dash2		96064
-	93009587	Musique Ambiance 1	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Musique Ambiance 1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambiances\Astral\Musique Ambiance 1		59241264
+	93009587	Musique Ambiance 1	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Musique Ambiance 1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambiances\Astral_Music_Menu\Musique Ambiance 1		59241264
 	101559840	Jap_Mort0	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Jap_Mort0_10C4C929.wem		\Actor-Mixer Hierarchy\Ambiances\Palier_Voix\Voix_Palier1\Jap_Mort\Jap_Mort0		254272
 	121005179	Son_Vide1	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Son_Vide1_10C4C929.wem		\Actor-Mixer Hierarchy\Ambiances\Palier_Voix\Voix_Palier1\Jap_Hit\Son_Vide1		192064
 	138424495	Trou_Noir-001	C:\Users\Lolo\Desktop\Master Angoulême\NanoProjet\Joute_Celeste\Assets\Joute_Celeste_Wwise\Joute_Celeste_WwiseProject\.cache\Windows\SFX\Trou_Noir-001_10C4C929.wem		\Actor-Mixer Hierarchy\In_Game_Items\Trou_Noir\Trou_Noir-001		2304064
