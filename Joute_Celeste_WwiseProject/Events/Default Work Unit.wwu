@@ -25,17 +25,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Hit" ID="{EC5BA111-CF58-4506-872F-4EA84AE032AE}">
-					<ChildrenList>
-						<Action Name="" ID="{5EDB78A4-DBA6-4DEB-AAE9-A5A2516AFC48}" ShortID="324326112">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Hit" ID="{5EC8B32A-461E-4806-9908-5C4E5BD53A0E}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Player_Fire" ID="{E2B9FF6D-02AE-4EBC-B04F-43B9B13D1546}">
 					<Comment>Play le choix de tir</Comment>
 					<ChildrenList>

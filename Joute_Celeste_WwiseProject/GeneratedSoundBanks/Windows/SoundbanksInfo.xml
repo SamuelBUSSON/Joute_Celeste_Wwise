@@ -38,7 +38,6 @@
 				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Play_Player_Death"/>
 				<Event Id="1408288908" Name="Play_Player_Fire" ObjectPath="\Events\Default Work Unit\Play_Player_Fire"/>
 				<Event Id="638998366" Name="Play_Player_Heal" ObjectPath="\Events\Default Work Unit\Play_Player_Heal"/>
-				<Event Id="1864892471" Name="Play_Player_Hit" ObjectPath="\Events\Default Work Unit\Play_Player_Hit"/>
 				<Event Id="365655931" Name="Play_Player_Move_Solo" ObjectPath="\Events\Default Work Unit\Play_Player_Move_Solo"/>
 				<Event Id="1506832986" Name="Play_Titre_jap" ObjectPath="\Events\Default Work Unit\Play_Titre_jap"/>
 				<Event Id="1876111215" Name="Play_Trou_Noir" ObjectPath="\Events\Default Work Unit\Play_Trou_Noir"/>

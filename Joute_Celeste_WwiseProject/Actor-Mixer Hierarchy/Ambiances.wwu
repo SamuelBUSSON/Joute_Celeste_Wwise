@@ -475,6 +475,182 @@
 												<ActiveSource Name="Son_Vide4" ID="{4C9914DB-70C4-449C-A42C-CB3DF73F62D5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="Player_Hit1" ID="{DDE21756-AA21-4236-862C-C26D025F82C1}" ShortID="366530656">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}">
+														<Effect Name="Holy_(Custom)" ID="{A76CB357-2BDC-4987-B7A1-DBB8E32F4647}" ShortID="854639847" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="7"/>
+																<Property Name="Density" Type="Real32" Value="70"/>
+																<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-24"/>
+																<Property Name="ERPattern" Type="int32" Value="9"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-0.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+																<Property Name="HFDamping" Type="Real32" Value="5.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="28"/>
+																<Property Name="Quality" Type="int32" Value="14"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+																<Property Name="RoomSize" Type="Real32" Value="42"/>
+																<Property Name="StereoWidth" Type="Real32" Value="172"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit1" ID="{95D4807F-A48D-446D-87C4-DD410CBE0CB5}" ShortID="439153988">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit1" ID="{95D4807F-A48D-446D-87C4-DD410CBE0CB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit3" ID="{1F67AC03-55D5-470D-892E-E3FADA6F41A4}" ShortID="882073158">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}">
+														<Effect Name="Holy_(Custom)" ID="{514F80D7-D19D-47F3-836F-07447D677CDE}" ShortID="52804538" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="7"/>
+																<Property Name="Density" Type="Real32" Value="70"/>
+																<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-24"/>
+																<Property Name="ERPattern" Type="int32" Value="9"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-0.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+																<Property Name="HFDamping" Type="Real32" Value="5.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="28"/>
+																<Property Name="Quality" Type="int32" Value="14"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+																<Property Name="RoomSize" Type="Real32" Value="42"/>
+																<Property Name="StereoWidth" Type="Real32" Value="172"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit3" ID="{0DFBAEFF-3023-4397-98EE-2965930C9673}" ShortID="779965436">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit3" ID="{0DFBAEFF-3023-4397-98EE-2965930C9673}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit2" ID="{DD052115-7913-4859-A6AE-640D5EDB9106}" ShortID="88743128">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}">
+														<Effect Name="Holy_(Custom)" ID="{E49117B2-16B3-4FF6-BA21-7216BF48E828}" ShortID="1020959291" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="7"/>
+																<Property Name="Density" Type="Real32" Value="70"/>
+																<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-24"/>
+																<Property Name="ERPattern" Type="int32" Value="9"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-0.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+																<Property Name="HFDamping" Type="Real32" Value="5.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="28"/>
+																<Property Name="Quality" Type="int32" Value="14"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+																<Property Name="RoomSize" Type="Real32" Value="42"/>
+																<Property Name="StereoWidth" Type="Real32" Value="172"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit2" ID="{E4C753AF-A2FA-4C98-91BE-0716839893BD}" ShortID="1021363999">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit2" ID="{E4C753AF-A2FA-4C98-91BE-0716839893BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit4" ID="{CBF5A855-8E55-4274-A984-1BD53A9AF1BC}" ShortID="28518033">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}">
+														<Effect Name="Holy_(Custom)" ID="{612A186A-10D4-4377-B7F7-32176C2D55D3}" ShortID="595642998" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="7"/>
+																<Property Name="Density" Type="Real32" Value="70"/>
+																<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-24"/>
+																<Property Name="ERPattern" Type="int32" Value="9"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-0.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+																<Property Name="HFDamping" Type="Real32" Value="5.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="28"/>
+																<Property Name="Quality" Type="int32" Value="14"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+																<Property Name="RoomSize" Type="Real32" Value="42"/>
+																<Property Name="StereoWidth" Type="Real32" Value="172"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit4" ID="{40011B87-298C-41A0-B275-AA011B8E620C}" ShortID="925285197">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit4" ID="{40011B87-298C-41A0-B275-AA011B8E620C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Jap_Mort" ID="{441952F1-1F9D-4BB3-B5E9-E57D1EF63770}" ShortID="292348118">
@@ -1760,6 +1936,206 @@
 												<ActiveSource Name="Son_Vide4" ID="{6EFC090B-42E8-405E-A471-2AB7E7785EFD}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="Player_Hit1" ID="{E0055F3B-C897-4798-BF2C-D8D941DA6B2D}" ShortID="255252630">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{2AE614D7-9170-48DF-B57D-59DA906CD6C0}" ShortID="805550" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{593614D3-03BD-4F4C-9084-A4688CE42FD5}" ShortID="1021783613" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit1" ID="{87E50414-5D3E-476F-BA5F-110336698165}" ShortID="596722452">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="439153988"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit1" ID="{87E50414-5D3E-476F-BA5F-110336698165}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit3" ID="{AA2F1F19-922B-466B-9623-F22B6F91C155}" ShortID="526516251">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{81DECA10-E0AD-44CA-AAF8-82D03B8DCB66}" ShortID="220739200" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{8A5DFE86-50AC-4CE6-90A8-F0066EB799C5}" ShortID="57885941" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit3" ID="{3AEC55E0-6595-4F2D-8410-C1934F00D736}" ShortID="1047272243">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="779965436"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit3" ID="{3AEC55E0-6595-4F2D-8410-C1934F00D736}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit2" ID="{A5FCB3BF-8250-4DD2-B30F-216EF52D1A88}" ShortID="534658564">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{BC9C83D2-B53E-4D1E-90A8-06343D41D4CE}" ShortID="822939574" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{82853F1D-FA5B-4D4D-8460-CCEC9866529B}" ShortID="657208827" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit2" ID="{FDBDD43B-8071-4A3A-A628-3DACC7D9956D}" ShortID="506398623">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1021363999"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit2" ID="{FDBDD43B-8071-4A3A-A628-3DACC7D9956D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit4" ID="{B0C42386-5AD3-44D4-893A-AEA29626B5B9}" ShortID="203014769">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{A0AC70E7-C1A4-44B8-A8F6-1A443FACB6D2}" ShortID="783415277" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{33CBB86E-0990-4E59-BC2B-32FBAE3ADE68}" ShortID="663131344" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit4" ID="{34DAF662-A483-45C8-9171-0FB3807A36E9}" ShortID="891346058">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="925285197"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit4" ID="{34DAF662-A483-45C8-9171-0FB3807A36E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Jap_Lancer" ID="{39DD6FC1-C99B-420B-BDDE-0DF0341BA959}" ShortID="620088876">
@@ -2728,6 +3104,206 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Son_Vide4" ID="{8C78E42E-536F-4759-96E4-FE743C46D731}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit1" ID="{8AFFA1B9-EE60-4CAD-A366-5D26AEC7C97A}" ShortID="909684462">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{A4AF16F9-69BE-468D-A609-EAB24BA538DB}" ShortID="177048729" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{50F650AA-D46E-4513-AF54-AE794D3778DF}" ShortID="602920367" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit1" ID="{EC8A11B7-9220-4BE5-B7F8-E0A29EB67232}" ShortID="352834186">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="439153988"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit1" ID="{EC8A11B7-9220-4BE5-B7F8-E0A29EB67232}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit3" ID="{32F9A735-2F7F-4D18-93F1-38A795805462}" ShortID="634052323">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{0B7807FB-B927-4D14-88B0-F22C33FFEF17}" ShortID="656611937" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{662E5E51-63D9-423D-AFAE-837FCD68AB64}" ShortID="187473" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit3" ID="{22AEA005-78CE-425D-96D9-BDF0C5762127}" ShortID="945593893">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="779965436"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit3" ID="{22AEA005-78CE-425D-96D9-BDF0C5762127}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit2" ID="{F18A0504-FEFB-4070-9594-7FBD53CD2B36}" ShortID="475326556">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{8482613D-8805-40E0-912B-E9DC99F6C538}" ShortID="1072097163" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{4F2B112D-0313-4F01-B10A-B718FA555E8A}" ShortID="491932543" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit2" ID="{BA06C726-ED0F-4EE2-9468-F304D4C26C5C}" ShortID="276150336">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1021363999"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit2" ID="{BA06C726-ED0F-4EE2-9468-F304D4C26C5C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Player_Hit4" ID="{40879BB5-87B9-4947-AD2B-1A87961FAC22}" ShortID="397792401">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{1E328C1A-DB8E-46B9-B00C-FFF8316F95EF}" ShortID="963189920" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{E3D1379E-8334-4AA7-8302-4E69A2476846}" ShortID="124341489" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Hit4" ID="{A71BD0C4-2F38-465F-837C-42E215C94AC9}" ShortID="618754914">
+													<Language>SFX</Language>
+													<AudioFile>Player_Hit4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="925285197"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Hit4" ID="{A71BD0C4-2F38-465F-837C-42E215C94AC9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
