@@ -84,42 +84,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Contact_for_Comete" ID="{767F8035-6A1D-4EA4-A50D-BE352ADB78B8}">
-					<Comment>Lance le choix de son (comète, planète ou étoile) si une comète entre en collision avec un astre</Comment>
-					<ChildrenList>
-						<Action Name="" ID="{29ACE4CF-4ECA-45DE-8F6D-CF1A85C68F8B}" ShortID="441349170">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Contact_for_Comete" ID="{9075E1F2-B64E-4C95-87C4-98B21289E8A7}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Contact_for_Etoile" ID="{002C79F5-E345-42EA-B044-57AA2D8CA0B7}">
-					<Comment>Lance le choix de son (comète, planète ou étoile) si une étoile entre en collision avec un astre</Comment>
-					<ChildrenList>
-						<Action Name="" ID="{7736BA6B-F081-4328-AFD6-96B74E074B35}" ShortID="355990502">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Contact_for_Etoile" ID="{96389104-492E-498E-9E0D-EF1B699F7DB9}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Contact_for_Planete" ID="{5B599143-5FB7-4756-8830-B9B2EF9FEA07}">
-					<Comment>Lance le choix de son (comète, planète ou étoile) si une planète entre en collision avec un astre</Comment>
-					<ChildrenList>
-						<Action Name="" ID="{FB9DEA35-4F98-437F-88BE-D03B79E39428}" ShortID="14773894">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Contact_for_Planete" ID="{85C86CBA-131F-4F8F-BF92-BD7FBF9CEA36}" WorkUnitID="{DF0A976D-1679-4598-8DC3-6CDD16AE7681}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Player_Charge" ID="{FA476D72-AB7F-4C86-8E16-4EA00038068B}">
 					<ChildrenList>
 						<Action Name="" ID="{D944C514-78D6-4CD6-96A3-B02322B5ABC4}" ShortID="44624937">
@@ -272,6 +236,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Astral_Music_Menu" ID="{923DE07E-5605-4ECE-A267-7029C18D72A2}" WorkUnitID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Charge_Loop" ID="{EB0C9AB4-76C1-4756-BB07-F3C9A9B89880}">
+					<ChildrenList>
+						<Action Name="" ID="{03B428B9-EEDA-4E18-8660-07AE7A14671C}" ShortID="620485027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Charge_Loop" ID="{614A7B70-114E-487B-8A40-6686056306F6}" WorkUnitID="{3E655350-4674-4255-9282-B5E7A676BCA2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

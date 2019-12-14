@@ -23,9 +23,6 @@
 			<IncludedEvents>
 				<Event Id="541273363" Name="Play_Astral_Music_Menu" ObjectPath="\Events\Default Work Unit\Play_Astral_Music_Menu"/>
 				<Event Id="586774143" Name="Play_Aura1_or_2" ObjectPath="\Events\Default Work Unit\Play_Aura1_or_2"/>
-				<Event Id="1722544548" Name="Play_Contact_for_Comete" ObjectPath="\Events\Default Work Unit\Play_Contact_for_Comete"/>
-				<Event Id="3099463575" Name="Play_Contact_for_Etoile" ObjectPath="\Events\Default Work Unit\Play_Contact_for_Etoile"/>
-				<Event Id="3938359640" Name="Play_Contact_for_Planete" ObjectPath="\Events\Default Work Unit\Play_Contact_for_Planete"/>
 				<Event Id="1037682143" Name="Play_Explosion_Comete" ObjectPath="\Events\Default Work Unit\Play_Explosion_Comete"/>
 				<Event Id="4292554548" Name="Play_Explosion_Etoile" ObjectPath="\Events\Default Work Unit\Play_Explosion_Etoile"/>
 				<Event Id="1818497125" Name="Play_Explosion_Planete" ObjectPath="\Events\Default Work Unit\Play_Explosion_Planete"/>
@@ -35,6 +32,7 @@
 				<Event Id="2508961772" Name="Play_Palier_Voix" ObjectPath="\Events\Default Work Unit\Play_Palier_Voix"/>
 				<Event Id="319966612" Name="Play_Player_Attrack" ObjectPath="\Events\Default Work Unit\Play_Player_Attrack"/>
 				<Event Id="2363478948" Name="Play_Player_Charge" ObjectPath="\Events\Default Work Unit\Play_Player_Charge"/>
+				<Event Id="3578254717" Name="Play_Player_Charge_Loop" ObjectPath="\Events\Default Work Unit\Play_Player_Charge_Loop"/>
 				<Event Id="2175711460" Name="Play_Player_Dash" ObjectPath="\Events\Default Work Unit\Play_Player_Dash"/>
 				<Event Id="168627934" Name="Play_Player_Dash2" ObjectPath="\Events\Default Work Unit\Play_Player_Dash2"/>
 				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Play_Player_Death"/>
@@ -202,6 +200,10 @@
 				<File Id="619439668" Language="SFX">
 					<ShortName>Jap_Hit3.wav</ShortName>
 					<Path>SFX\Jap_Hit3_10C4C929.wem</Path>
+				</File>
+				<File Id="624192429" Language="SFX">
+					<ShortName>Player_Charge_Loop.wav</ShortName>
+					<Path>SFX\Player_Charge_Loop_10C4C929.wem</Path>
 				</File>
 				<File Id="644346688" Language="SFX">
 					<ShortName>Jap_Hit6.wav</ShortName>
