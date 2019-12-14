@@ -90,6 +90,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<SwitchContainer Name="Palier_Voix" ID="{5D2045CA-6CE2-4E82-8C59-035371222108}" ShortID="858229599">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
@@ -961,7 +968,6 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Jap_Lancer" ID="{87475FDE-3649-4912-8830-9668D30748B0}" ShortID="69835366">
 									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1185,6 +1191,106 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Jap_Lancer56" ID="{02019712-973D-4510-B231-88143D6A8DE6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1_01" ID="{26D84982-8F04-4F11-ADEB-B73C417BF532}" ShortID="395662058">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{D3696DC8-6AE3-4B24-9355-560E57F976C7}" ShortID="865135332" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{C323607A-4996-4029-86A6-8179B1A0EA39}" ShortID="749829578" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{4C2EEBD6-406A-4331-977B-2D8EF3E034B3}" ShortID="455649081">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{4C2EEBD6-406A-4331-977B-2D8EF3E034B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Son_Vide1_02" ID="{2BC1AD10-CC0E-4619-983C-67E74A10E839}" ShortID="657257964">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}">
+														<Effect Name="Fear_no_Evil (Custom)" ID="{E5E51AFA-12D8-4381-BED2-452FE032F98F}" ShortID="890279811" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+															<PropertyList>
+																<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+																<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+																<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+																<Property Name="WetLevel" Type="Real32" Value="-7"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}">
+														<Effect Name="Bass_(Custom)" ID="{618F3328-B844-4E46-B224-4057B844844A}" ShortID="585513801" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+																<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+																<Property Name="ModPWM" Type="Real32" Value="0"/>
+																<Property Name="WetDryMix" Type="Real32" Value="19"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Son_Vide1" ID="{CF473BA0-6421-4491-86B3-9B5A63A30BCB}" ShortID="48246364">
+													<Language>SFX</Language>
+													<AudioFile>Son_Vide1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="121005179"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Son_Vide1" ID="{CF473BA0-6421-4491-86B3-9B5A63A30BCB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -3610,6 +3716,108 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<RandomSequenceContainer Name="Round1" ID="{8FBF05AD-7C30-462A-9425-38A6C5849BF7}" ShortID="1047607896">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+							<ObjectRef Name="Chorus_Like" ID="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Round1" ID="{E02D63B6-9B73-485C-A916-7B2FFDA26C49}" ShortID="129042429">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Round1" ID="{0F7E108F-1A11-41F3-85C0-B57A66791158}" ShortID="400238190">
+									<Language>SFX</Language>
+									<AudioFile>Round1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Round1" ID="{0F7E108F-1A11-41F3-85C0-B57A66791158}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Round2" ID="{A01D44F9-B07C-45C0-B83C-F91B5D68B60C}" ShortID="332453270">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+							<ObjectRef Name="Chorus_Like" ID="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Round2" ID="{04F08903-01D3-4C1D-B2F3-46321F88D376}" ShortID="730417629">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Round2" ID="{62578BB6-89A6-4007-8FC4-98903992D65C}" ShortID="309630102">
+									<Language>SFX</Language>
+									<AudioFile>Round2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Round2" ID="{62578BB6-89A6-4007-8FC4-98903992D65C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Round3" ID="{71A8D49A-BC37-4AF4-A6BC-72FAACB615FF}" ShortID="1053915782">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+							<ObjectRef Name="Chorus_Like" ID="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Mix_Ambiances" ID="{15C32752-8682-49D1-B8A4-AB3F74C6CCDA}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Round3" ID="{08930861-C86A-452A-95C6-75084991AF03}" ShortID="63141496">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{95746A62-0437-4999-A5FB-A609E5564821}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C513CC0F-9772-4BD2-8A35-BED7E8AF5BB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Round3" ID="{2FCCDD27-E4E6-4CC9-B8E4-21055FB0F1D0}" ShortID="599950210">
+									<Language>SFX</Language>
+									<AudioFile>Round3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Round3" ID="{2FCCDD27-E4E6-4CC9-B8E4-21055FB0F1D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -39,6 +39,9 @@
 				<Event Id="1408288908" Name="Play_Player_Fire" ObjectPath="\Events\Default Work Unit\Play_Player_Fire"/>
 				<Event Id="638998366" Name="Play_Player_Heal" ObjectPath="\Events\Default Work Unit\Play_Player_Heal"/>
 				<Event Id="365655931" Name="Play_Player_Move_Solo" ObjectPath="\Events\Default Work Unit\Play_Player_Move_Solo"/>
+				<Event Id="1012641279" Name="Play_Round1" ObjectPath="\Events\Default Work Unit\Play_Round1"/>
+				<Event Id="1012641276" Name="Play_Round2" ObjectPath="\Events\Default Work Unit\Play_Round2"/>
+				<Event Id="1012641277" Name="Play_Round3" ObjectPath="\Events\Default Work Unit\Play_Round3"/>
 				<Event Id="1506832986" Name="Play_Titre_jap" ObjectPath="\Events\Default Work Unit\Play_Titre_jap"/>
 				<Event Id="1876111215" Name="Play_Trou_Noir" ObjectPath="\Events\Default Work Unit\Play_Trou_Noir"/>
 				<Event Id="2405542185" Name="Stop_Player_Move_Solo" ObjectPath="\Events\Default Work Unit\Stop_Player_Move_Solo"/>
@@ -108,6 +111,10 @@
 					<ShortName>Player_Dash1.wav</ShortName>
 					<Path>SFX\Player_Dash1_10C4C929.wem</Path>
 				</File>
+				<File Id="309630102" Language="SFX">
+					<ShortName>Round2.wav</ShortName>
+					<Path>SFX\Round2_10C4C929.wem</Path>
+				</File>
 				<File Id="310941075" Language="SFX">
 					<ShortName>Move_Planete.wav</ShortName>
 					<Path>SFX\Move_Planete_10C4C929.wem</Path>
@@ -119,6 +126,10 @@
 				<File Id="362527738" Language="SFX">
 					<ShortName>Jap_Mort3.wav</ShortName>
 					<Path>SFX\Jap_Mort3_10C4C929.wem</Path>
+				</File>
+				<File Id="400238190" Language="SFX">
+					<ShortName>Round1.wav</ShortName>
+					<Path>SFX\Round1_10C4C929.wem</Path>
 				</File>
 				<File Id="407296692" Language="SFX">
 					<ShortName>Player_Lancer.wav</ShortName>
@@ -195,6 +206,10 @@
 				<File Id="590515303" Language="SFX">
 					<ShortName>Aura1_Moins.wav</ShortName>
 					<Path>SFX\Aura1_Moins_10C4C929.wem</Path>
+				</File>
+				<File Id="599950210" Language="SFX">
+					<ShortName>Round3.wav</ShortName>
+					<Path>SFX\Round3_10C4C929.wem</Path>
 				</File>
 				<File Id="619439668" Language="SFX">
 					<ShortName>Jap_Hit3.wav</ShortName>

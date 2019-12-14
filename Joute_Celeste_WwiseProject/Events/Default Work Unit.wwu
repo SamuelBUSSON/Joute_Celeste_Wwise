@@ -241,6 +241,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Round1" ID="{DB5E23A2-DE7C-45FE-A752-D1C8BD145360}">
+					<ChildrenList>
+						<Action Name="" ID="{0BD72AE7-798E-4718-90DA-76C50EBE9837}" ShortID="490517206">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Round1" ID="{8FBF05AD-7C30-462A-9425-38A6C5849BF7}" WorkUnitID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Round2" ID="{3C169983-0CBF-42E6-A767-95BB9924CF83}">
+					<ChildrenList>
+						<Action Name="" ID="{DCD757EA-EEAE-4AAF-9391-5C03F7F089BF}" ShortID="947551317">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Round2" ID="{A01D44F9-B07C-45C0-B83C-F91B5D68B60C}" WorkUnitID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Round3" ID="{B377F8EA-4C02-42F0-BD32-91EA18F8FFBC}">
+					<ChildrenList>
+						<Action Name="" ID="{007A093F-19B6-4D9C-88C6-71A51A1828A3}" ShortID="464821892">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Round3" ID="{71A8D49A-BC37-4AF4-A6BC-72FAACB615FF}" WorkUnitID="{5BCEEF6F-7D54-462A-BFE3-96A0809CDAAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
